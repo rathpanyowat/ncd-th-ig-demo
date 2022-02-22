@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "ncdth-allergy-intolerance"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance\">AllergyIntolerance</a><a name=\"AllergyIntolerance\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Allergy or Intolerance (generally: Risk of adverse reaction to a substance)</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance\">AllergyIntolerance</a><a name=\"AllergyIntolerance\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Allergy or Intolerance (generally: Risk of adverse reaction to a substance)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.clinicalStatus\">clinicalStatus</a><a name=\"AllergyIntolerance.clinicalStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">active | inactive | resolved</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.verificationStatus\">verificationStatus</a><a name=\"AllergyIntolerance.verificationStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">unconfirmed | confirmed | refuted | entered-in-error</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.category\">category</a><a name=\"AllergyIntolerance.category\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">food | medication | environment | biologic</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.criticality\">criticality</a><a name=\"AllergyIntolerance.criticality\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">low | high | unable-to-assess</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.code\">code</a><a name=\"AllergyIntolerance.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code that identifies the allergy or intolerance</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html\">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.patient\">patient</a><a name=\"AllergyIntolerance.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who the sensitivity is for</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.reaction\">reaction</a><a name=\"AllergyIntolerance.reaction\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Adverse Reaction Events linked to exposure to substance</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-allergy-intolerance-definitions.html#AllergyIntolerance.reaction.manifestation\">manifestation</a><a name=\"AllergyIntolerance.reaction.manifestation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Clinical symptoms/signs associated with the Event</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-clinical-findings.html\">SNOMEDCTClinicalFindings</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "NCDTHAllergyIntolerance"];
-  fhir:StructureDefinition.title [ fhir:value "NCD Thailand AllergyIntolerance Profile"];
+  fhir:StructureDefinition.title [ fhir:value "NCD TH AllergyIntolerance Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-22T11:05:10+07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-02-22T23:30:09+07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -620,6 +620,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the status contains the codes inactive and resolved that mark the AllergyIntolerance as no longer active." ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
@@ -682,6 +683,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the status contains the codes refuted and entered-in-error that mark the AllergyIntolerance as not currently valid." ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
@@ -815,6 +817,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -886,6 +889,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -925,7 +929,7 @@
          fhir:value "Code";
          fhir:index 0
        ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "AllergyIntolerance.code" ];
@@ -948,16 +952,11 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "AllergyIntoleranceCode" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Type of the substance/product, allergy or intolerance condition, or negation/exclusion codes for reporting no known allergies." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://hl7.org/fhir/ValueSet/allergyintolerance-code";
            fhir:link <http://hl7.org/fhir/ValueSet/allergyintolerance-code>
@@ -1014,6 +1013,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1407,6 +1407,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1649,16 +1650,11 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "Manifestation" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://hl7.org/fhir/ValueSet/clinical-findings";
            fhir:link <http://hl7.org/fhir/ValueSet/clinical-findings>
@@ -1901,6 +1897,61 @@
        fhir:index 0;
        fhir:Element.id [ fhir:value "AllergyIntolerance" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.clinicalStatus" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.clinicalStatus" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.verificationStatus" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.verificationStatus" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.category" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.category" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.criticality" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.criticality" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.code" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/allergyintolerance-code";
+           fhir:link <http://hl7.org/fhir/ValueSet/allergyintolerance-code>
+         ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.patient" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.reaction" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/clinical-findings";
+           fhir:link <http://hl7.org/fhir/ValueSet/clinical-findings>
+         ]
+       ]
      ]
   ] .
 

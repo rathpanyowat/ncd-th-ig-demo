@@ -8,67 +8,79 @@
     "AllergyIntolerance": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance",
-        "title": "NCD Thailand AllergyIntolerance Profile"
+        "title": "NCD TH AllergyIntolerance Profile"
       }
     ],
     "Condition": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition",
-        "title": "NCD Thailand Condition Profile"
+        "title": "NCD TH Condition Profile"
       }
     ],
     "Coverage": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage",
-        "title": "NCD Thailand Coverage Profile"
+        "title": "NCD TH Coverage Profile"
       }
     ],
     "DiagnosticReport": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab",
-        "title": "NCD Thailand DiagnosticReport Profile for Lab Report"
+        "title": "NCD TH DiagnosticReport Profile for Lab Report"
       }
     ],
     "Encounter": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter",
-        "title": "NCD Thailand Encounter Profile"
+        "title": "NCD TH Encounter Profile"
       }
     ],
     "EpisodeOfCare": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care",
-        "title": "NCD Thailand EpisodeOfCare Profile"
+        "title": "NCD TH EpisodeOfCare Profile"
       }
     ],
     "FamilyMemberHistory": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history",
-        "title": "NCD Thailand FamilyMemberHistory Profile"
+        "title": "NCD TH FamilyMemberHistory Profile"
       }
     ],
     "Media": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media",
-        "title": "NCD Thailand Media Profile"
+        "title": "NCD TH Media Profile"
       }
     ],
     "Observation": [
       {
-        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation",
-        "title": "NCD Thailand Observation Profile"
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab",
+        "title": "NCD TH Observation Profile - Lab"
+      },
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey",
+        "title": "NCD TH Observation Profile - PE \u0026 Survey"
+      },
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social",
+        "title": "NCD TH Observation Profile - Social History"
+      },
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital",
+        "title": "NCD TH Observation Profile - Vital Signs"
       }
     ],
     "Organization": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization",
-        "title": "NCD Thailand Organization Profile"
+        "title": "NCD TH Organization Profile"
       }
     ],
     "Patient": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient",
-        "title": "NCD Thailand Patient Profile"
+        "title": "NCD TH Patient Profile"
       }
     ]
   },
@@ -87,6 +99,13 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Patient.contact.name",

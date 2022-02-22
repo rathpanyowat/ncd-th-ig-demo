@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NCD-TH-IG\NCD Thailand AllergyIntolerance Profile - Definitions - FHIR v4.0.1</title>
+    <title>NCD-TH-IG\NCD TH AllergyIntolerance Profile - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -102,7 +102,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NCD Thailand AllergyIntolerance Profile</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NCD TH AllergyIntolerance Profile</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -149,6 +149,16 @@
     </li>
   
 
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-ncdth-allergy-intolerance-examples.html">Examples</a>
+      </li>
+    
+  
 
 
 
@@ -305,6 +315,7 @@ The clinical status of the allergy or intolerance.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Refer to <a href="http://hl7.org/fhir/R4/extensibility.html#Special-Case">discussion</a> if clincalStatus is missing data.
 The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.</p>
 </td></tr>
@@ -319,6 +330,7 @@ Assertion about certainty associated with a propensity, or potential risk, of a 
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -344,6 +356,7 @@ Identification of the underlying physiological mechanism for a Reaction Risk.</p
 Category of an identified substance associated with allergies or intolerances.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Category, Type, Reaction Type, Class</td></tr>
   <tr><td>Comments</td><td><p>This data element has been included because it is currently being captured in some clinical systems. This data can be derived from the substance where coding systems are used, and is effectively redundant in that situation.  When searching on category, consider the implications of AllergyIntolerance resources without a category.  For example, when searching on category = medication, medication allergies that don't have a category valued will not be returned.  Refer to <a href="http://hl7.org/fhir/R4/search.html">search</a> for more information on how to search category with a :missing modifier to get allergies that don't have a category.  Additionally, category should be used with caution because category can be subjective based on the sender.</p>
 </td></tr>
@@ -357,6 +370,7 @@ Category of an identified substance associated with allergies or intolerances.</
 Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Severity, Seriousness, Contra-indication, Risk</td></tr>
   <tr><td>Comments</td><td><p>The default criticality value for any propensity to an adverse reaction should be 'Low Risk', indicating at the very least a relative contraindication to deliberate or voluntary exposure to the substance. 'High Risk' is flagged if the clinician has identified a propensity for a more serious or potentially life-threatening reaction, such as anaphylaxis, and implies an absolute contraindication to deliberate or voluntary exposure to the substance. If this element is missing, the criticality is unknown (though it may be known elsewhere).  Systems that capture a severity at the condition level are actually representing the concept of criticality whereas the severity documented at the reaction level is representing the true reaction severity.  Existing systems that are capturing both condition criticality and reaction severity may use the term &quot;severity&quot; to represent both.  Criticality is the worst it could be in the future (i.e. situation-agnostic) whereas severity is situation-dependent.</p>
 </td></tr>
@@ -365,11 +379,10 @@ Estimate of the potential clinical harm, or seriousness, of a reaction to an ide
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="AllergyIntolerance.code"> </a><span style="color: grey">16.</span> <b>AllergyIntolerance.code</b><a href="#AllergyIntolerance.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;), or a negated/excluded code for a specific substance or class (e.g., &quot;No latex allergy&quot;) or a general or categorical negated statement (e.g.,  &quot;No known allergy&quot;, &quot;No known drug allergies&quot;).  Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'.  If a receiving system is unable to confirm that AllergyIntolerance.reaction.substance falls within the semantic scope of AllergyIntolerance.code, then the receiving system should ignore AllergyIntolerance.reaction.substance.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a>
-Type of the substance/product, allergy or intolerance condition, or negation/exclusion codes for reporting no known allergies.</p>
-</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Code</td></tr>
   <tr><td>Comments</td><td><p>It is strongly recommended that this element be populated using a terminology, where possible. For example, some terminologies used include RxNorm, SNOMED CT, DM+D, NDFRT, ICD-9, IDC-10, UNII, and ATC. Plain text should only be used if there is no appropriate terminology available. Additional details can be specified in the text.</p>
 <p>When a substance or product code is specified for the 'code' element, the &quot;default&quot; semantic context is that this is a positive statement of an allergy or intolerance (depending on the value of the 'type' element, if present) condition to the specified substance/product.  In the corresponding SNOMED CT allergy model, the specified substance/product is the target (destination) of the &quot;Causative agent&quot; relationship.</p>
@@ -382,6 +395,7 @@ Type of the substance/product, allergy or intolerance condition, or negation/exc
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Patient</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -448,6 +462,7 @@ Type of the substance/product, allergy or intolerance condition, or negation/exc
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="AllergyIntolerance.reaction.id"> </a><span style="color: grey">26.</span> <b>AllergyIntolerance.reaction.id</b><a href="#AllergyIntolerance.reaction.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -495,10 +510,9 @@ Codes defining the type of the substance (including pharmaceutical products).</p
   <tr><td>Definition</td><td><p>Clinical symptoms and/or signs that are observed or associated with the adverse reaction event.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
-Clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event.</p>
-</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Symptoms, Signs</td></tr>
   <tr><td>Comments</td><td><p>Manifestation can be expressed as a single word, phrase or brief description. For example: nausea, rash or no reaction. It is preferable that manifestation should be coded with a terminology, where possible. The values entered here may be used to display on an application screen as part of a list of adverse reactions, as recommended in the UK NHS CUI guidelines.  Terminologies commonly used include, but are not limited to, SNOMED CT or ICD10.</p>
 </td></tr>
@@ -608,7 +622,7 @@ A coded concept describing the route or physiological path of administration of 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sil-th.github.io/">Standard and Interoperability Lab Thailand</a>.  Package ncd-th-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 22, 2022 11:05+0700">2022-02-22</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sil-th.github.io/">Standard and Interoperability Lab Thailand</a>.  Package ncd-th-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 22, 2022 23:30+0700">2022-02-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

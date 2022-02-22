@@ -1,50 +1,216 @@
 ﻿ThaiNCDIG : Validation Results
 =========================================
 
-err = 0, warn = 10, info = 1
+err = 58, warn = 6, info = 27
 IG Publisher Version: 1.1.106
-Generated Tue Feb 22 11:05:31 ICT 2022. FHIR version 4.0.1 for ncd-th-ig#0.1.0 (canonical = https://rathpanyowat.github.io/ncd-th-ig-demo)
- Build Errors : 0 / 0 / 0
+Generated Tue Feb 22 23:30:40 ICT 2022. FHIR version 4.0.1 for ncd-th-ig#0.1.0 (canonical = https://rathpanyowat.github.io/ncd-th-ig-demo)
+ Build Errors : 4 / 0 / 0
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceExample : 0 / 0 / 1
  /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/CodeSystem-th-gov-coverage-type-cs : 0 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Condition-ConditionExample1 : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Condition-ConditionExample2 : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Coverage-CoverageExample : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/DiagnosticReport-DiagnosticReportLabExample1 : 1 / 1 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/DiagnosticReport-DiagnosticReportLabExample2 : 1 / 1 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Encounter-EncounterExample : 1 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/EpisodeOfCare-EpisodeOfCareExample : 2 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/FamilyMemberHistory-FamilyMemberHistoryExample : 1 / 0 / 1
  /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/ImplementationGuide-ncd-th-ig : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Media-MediaExample : 1 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExample2Q : 3 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleAF : 3 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleAge : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleAlcohol : 3 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleBH : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleBMI : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleBP : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleBUN : 1 / 0 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleBW : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleCVD : 4 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleChol : 1 / 1 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleCr : 1 / 0 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleDFScreening : 3 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleDNScreening : 3 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleDRScreening : 3 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleDiet : 3 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleFBS : 1 / 0 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleHDL : 1 / 0 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleLDL : 1 / 1 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExamplePhysical : 4 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleRBS : 1 / 0 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleST5 : 3 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleSmoking : 3 / 1 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleTG : 1 / 0 / 3
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Observation-ObservationExampleWC : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Organization-OrganizationExample : 0 / 0 / 1
  /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-allergy-intolerance : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-condition : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-coverage : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-diagnostic-report-lab : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-encounter : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-episode-of-care : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-family-member-history : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-media : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-observation : 0 / 1 / 1
- /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-organization : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-allergy-intolerance : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-condition : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-coverage : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-diagnostic-report-lab : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-encounter : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-episode-of-care : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-family-member-history : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-media : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-observation-lab : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-observation-pe-survey : 4 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-observation-social : 4 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-observation-vital : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-organization : 0 / 0 / 1
  /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-patient : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/ValueSet-ncdth-lab-vs : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/ValueSet-ncdth-vital-vs : 0 / 0 / 1
  /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/ValueSet-th-gov-coverage-type-vs : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /Users/rathpanyowat/Desktop/ThaiNCDIG/output/Encounter-EncounterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 174, column 1422: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /Users/rathpanyowat/Desktop/ThaiNCDIG/output/EpisodeOfCare-EpisodeOfCareExample.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 1372: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /Users/rathpanyowat/Desktop/ThaiNCDIG/output/EpisodeOfCare-EpisodeOfCareExample.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 1456: The link 'CareTeam' for "CareTeam" cannot be resolved
+ERROR: /Users/rathpanyowat/Desktop/ThaiNCDIG/output/Media-MediaExample.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 1139: The link 'Practitioner' for "Practitioner" cannot be resolved
+== fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceExample.json ==
 == fsh-generated/resources/CodeSystem-th-gov-coverage-type-cs.json ==
 INFORMATION: CodeSystem/th-gov-coverage-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Condition-ConditionExample1.json ==
+== fsh-generated/resources/Condition-ConditionExample2.json ==
+== fsh-generated/resources/Coverage-CoverageExample.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReportLabExample1.json ==
+ERROR: DiagnosticReport/DiagnosticReportLabExample1: DiagnosticReport.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice DiagnosticReport.category:LaboratorySlice in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: DiagnosticReport/DiagnosticReportLabExample1: DiagnosticReport: DiagnosticReport.category:LaboratorySlice: Unable to check minimum required (DiagnosticReport.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab)
+WARNING: DiagnosticReport/DiagnosticReportLabExample1: DiagnosticReport.code: [Unable to determine whether the provided codes are in the value set https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs because the value set or a code system it depends on is not known to the validator, Code System URI 'http://tmlt.this.or.th' is unknown so the code cannot be validated]
+INFORMATION: DiagnosticReport/DiagnosticReportLabExample1: DiagnosticReport.code.coding[0]: Code System URI 'http://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/DiagnosticReport-DiagnosticReportLabExample2.json ==
+ERROR: DiagnosticReport/DiagnosticReportLabExample2: DiagnosticReport.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice DiagnosticReport.category:LaboratorySlice in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: DiagnosticReport/DiagnosticReportLabExample2: DiagnosticReport: DiagnosticReport.category:LaboratorySlice: Unable to check minimum required (DiagnosticReport.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab)
+WARNING: DiagnosticReport/DiagnosticReportLabExample2: DiagnosticReport.code: [Unable to determine whether the provided codes are in the value set https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs because the value set or a code system it depends on is not known to the validator, Code System URI 'http://tmlt.this.or.th' is unknown so the code cannot be validated]
+INFORMATION: DiagnosticReport/DiagnosticReportLabExample2: DiagnosticReport.code.coding[0]: Code System URI 'http://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Encounter-EncounterExample.json ==
+ERROR: Encounter/EncounterExample: Encounter.participant[0].individual: Unable to resolve resource 'Practitioner'
+== fsh-generated/resources/EpisodeOfCare-EpisodeOfCareExample.json ==
+ERROR: EpisodeOfCare/EpisodeOfCareExample: EpisodeOfCare.careManager: Unable to resolve resource 'Practitioner'
+ERROR: EpisodeOfCare/EpisodeOfCareExample: EpisodeOfCare.team[0]: Unable to resolve resource 'CareTeam'
+== fsh-generated/resources/FamilyMemberHistory-FamilyMemberHistoryExample.json ==
+ERROR: FamilyMemberHistory/FamilyMemberHistoryExample: FamilyMemberHistory: fhs-1: 'Can have age[x] or born[x], but not both' Rule 'Can have age[x] or born[x], but not both' Failed
 == fsh-generated/resources/ImplementationGuide-ncd-th-ig.json ==
+== fsh-generated/resources/Media-MediaExample.json ==
+ERROR: Media/MediaExample: Media.operator: Unable to resolve resource 'Practitioner'
+== fsh-generated/resources/Observation-ObservationExample2Q.json ==
+ERROR: Observation/ObservationExample2Q: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExample2Q: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExample2Q: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+INFORMATION: Observation/ObservationExample2Q: Observation.code.coding[0]: Code System URI 'https://www.dmh.go.th/2q' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleAF.json ==
+ERROR: Observation/ObservationExampleAF: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleAF: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleAF: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+== fsh-generated/resources/Observation-ObservationExampleAge.json ==
+== fsh-generated/resources/Observation-ObservationExampleAlcohol.json ==
+ERROR: Observation/ObservationExampleAlcohol: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Social in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleAlcohol: Observation: Observation.category:Social: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social)
+ERROR: Observation/ObservationExampleAlcohol: Observation.category[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/observation-category#social in http://terminology.hl7.org/CodeSystem/observation-category for 'http://terminology.hl7.org/CodeSystem/observation-category#social'
+ERROR: Observation/ObservationExampleAlcohol: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+== fsh-generated/resources/Observation-ObservationExampleBH.json ==
+== fsh-generated/resources/Observation-ObservationExampleBMI.json ==
+== fsh-generated/resources/Observation-ObservationExampleBP.json ==
+== fsh-generated/resources/Observation-ObservationExampleBUN.json ==
+ERROR: Observation/ObservationExampleBUN: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleBUN: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleBUN: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleBW.json ==
+== fsh-generated/resources/Observation-ObservationExampleCVD.json ==
+ERROR: Observation/ObservationExampleCVD: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleCVD: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleCVD: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+ERROR: Observation/ObservationExampleCVD: Observation.code.coding[0]: The code "99056-4" is not valid in the system http://loinc.org; The code provided (http://loinc.org#99056-4) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#99056-4'
+== fsh-generated/resources/Observation-ObservationExampleChol.json ==
+ERROR: Observation/ObservationExampleChol: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleChol: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleChol: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+WARNING: Observation/ObservationExampleChol: Observation.code.coding[0].display: value should not start or finish with whitespace 'Cholesterol...Plasma	'
+== fsh-generated/resources/Observation-ObservationExampleCr.json ==
+ERROR: Observation/ObservationExampleCr: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleCr: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleCr: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleDFScreening.json ==
+ERROR: Observation/ObservationExampleDFScreening: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleDFScreening: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleDFScreening: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+== fsh-generated/resources/Observation-ObservationExampleDNScreening.json ==
+ERROR: Observation/ObservationExampleDNScreening: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleDNScreening: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleDNScreening: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+== fsh-generated/resources/Observation-ObservationExampleDRScreening.json ==
+ERROR: Observation/ObservationExampleDRScreening: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleDRScreening: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleDRScreening: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+== fsh-generated/resources/Observation-ObservationExampleDiet.json ==
+ERROR: Observation/ObservationExampleDiet: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Social in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleDiet: Observation: Observation.category:Social: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social)
+ERROR: Observation/ObservationExampleDiet: Observation.category[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/observation-category#social in http://terminology.hl7.org/CodeSystem/observation-category for 'http://terminology.hl7.org/CodeSystem/observation-category#social'
+ERROR: Observation/ObservationExampleDiet: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+== fsh-generated/resources/Observation-ObservationExampleFBS.json ==
+ERROR: Observation/ObservationExampleFBS: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleFBS: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleFBS: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleHDL.json ==
+ERROR: Observation/ObservationExampleHDL: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleHDL: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleHDL: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleLDL.json ==
+ERROR: Observation/ObservationExampleLDL: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleLDL: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleLDL: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+WARNING: Observation/ObservationExampleLDL: Observation.code.coding[0].display: value should not start or finish with whitespace 'Cholesterol...calculation	'
+== fsh-generated/resources/Observation-ObservationExamplePhysical.json ==
+ERROR: Observation/ObservationExamplePhysical: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Social in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExamplePhysical: Observation: Observation.category:Social: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social)
+ERROR: Observation/ObservationExamplePhysical: Observation.category[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/observation-category#social in http://terminology.hl7.org/CodeSystem/observation-category for 'http://terminology.hl7.org/CodeSystem/observation-category#social'
+ERROR: Observation/ObservationExamplePhysical: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+ERROR: Observation/ObservationExamplePhysical: Observation.code.coding[0]: The code "99285-9" is not valid in the system http://loinc.org; The code provided (http://loinc.org#99285-9) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#99285-9'
+== fsh-generated/resources/Observation-ObservationExampleRBS.json ==
+ERROR: Observation/ObservationExampleRBS: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleRBS: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleRBS: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleST5.json ==
+ERROR: Observation/ObservationExampleST5: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Exam in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleST5: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Survey in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: Observation/ObservationExampleST5: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+INFORMATION: Observation/ObservationExampleST5: Observation.code.coding[0]: Code System URI 'https://www.srithanya.go.th/st5' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleSmoking.json ==
+ERROR: Observation/ObservationExampleSmoking: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Social in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleSmoking: Observation: Observation.category:Social: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social)
+ERROR: Observation/ObservationExampleSmoking: Observation.category[0].coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/observation-category#social in http://terminology.hl7.org/CodeSystem/observation-category for 'http://terminology.hl7.org/CodeSystem/observation-category#social'
+ERROR: Observation/ObservationExampleSmoking: Observation.code: Found a reference to a CodeSystem (http://loinc.org) where a ValueSet belongs
+WARNING: Observation/ObservationExampleSmoking: Observation.value.ofType(CodeableConcept).coding[0]: The display "Current some day smoker" is not a valid display for the code {http://snomed.info/sct}428041000124106 - should be one of ['Occasional tobacco smoker', 'Occasional tobacco smoker (finding)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#428041000124106'
+== fsh-generated/resources/Observation-ObservationExampleTG.json ==
+ERROR: Observation/ObservationExampleTG: Observation.category[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Observation.category:Laboratory in profile https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: Observation/ObservationExampleTG: Observation: Observation.category:Laboratory: Unable to check minimum required (Observation.category) due to lack of slicing validation (from https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab)
+INFORMATION: Observation/ObservationExampleTG: Observation.code.coding[0]: Code System URI 'https://tmlt.this.or.th' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-ObservationExampleWC.json ==
+== fsh-generated/resources/Organization-OrganizationExample.json ==
 == fsh-generated/resources/Patient-PatientExample.json ==
 == fsh-generated/resources/StructureDefinition-ncdth-allergy-intolerance.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-condition.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-coverage.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-diagnostic-report-lab.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-encounter.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-episode-of-care.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-family-member-history.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-media.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-ncdth-observation.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-observation-lab.json ==
+== fsh-generated/resources/StructureDefinition-ncdth-observation-pe-survey.json ==
+ERROR: StructureDefinition/ncdth-observation-pe-survey: StructureDefinition.snapshot.element[38].binding.valueSet: Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ncdth-observation-pe-survey: StructureDefinition.differential.element[11].binding.valueSet: Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ncdth-observation-pe-survey: StructureDefinition.differential.element[11].binding: The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem) 
+ERROR: StructureDefinition/ncdth-observation-pe-survey: StructureDefinition.snapshot.element[38].binding: The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem) 
+== fsh-generated/resources/StructureDefinition-ncdth-observation-social.json ==
+ERROR: StructureDefinition/ncdth-observation-social: StructureDefinition.snapshot.element[26].binding.valueSet: Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ncdth-observation-social: StructureDefinition.differential.element[7].binding.valueSet: Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ncdth-observation-social: StructureDefinition.differential.element[7].binding: The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem) 
+ERROR: StructureDefinition/ncdth-observation-social: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem) 
+== fsh-generated/resources/StructureDefinition-ncdth-observation-vital.json ==
 == fsh-generated/resources/StructureDefinition-ncdth-organization.json ==
-WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncdth-patient.json ==
+== fsh-generated/resources/ValueSet-ncdth-lab-vs.json ==
+WARNING: ValueSet.where(id = 'ncdth-lab-vs'): Error from server: Unable to provide support for code system http://tmlt.this.or.th
+== fsh-generated/resources/ValueSet-ncdth-vital-vs.json ==
 == fsh-generated/resources/ValueSet-th-gov-coverage-type-vs.json ==

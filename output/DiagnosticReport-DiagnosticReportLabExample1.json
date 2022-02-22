@@ -1,0 +1,41 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosticReportLabExample1",
+  "meta": {
+    "profile": [
+      "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://tmlt.this.or.th 320259}\">Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>สมชาย ใจดี </b> (no stated gender) 1974-12-25 ( id: 1222233333445 (OFFICIAL))</td></tr><tr><td>When For</td><td>2022-02-20 01:28:17+0700</td></tr><tr><td>Reported</td><td>2022-02-20 01:28:17+0700</td></tr></table><p><b>Report Details</b></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://tmlt.this.or.th",
+        "code": "320259",
+        "display": "Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientExample"
+  },
+  "encounter": {
+    "reference": "Encounter/EncounterExample"
+  },
+  "effectiveDateTime": "2022-02-20T13:28:17+07:00",
+  "issued": "2022-02-20T13:28:17+07:00"
+}

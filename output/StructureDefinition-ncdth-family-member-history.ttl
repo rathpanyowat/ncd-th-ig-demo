@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "ncdth-family-member-history"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory\">FamilyMemberHistory</a><a name=\"FamilyMemberHistory\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/familymemberhistory.html\">FamilyMemberHistory</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about patient's relatives, relevant for patient</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory\">FamilyMemberHistory</a><a name=\"FamilyMemberHistory\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/familymemberhistory.html\">FamilyMemberHistory</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about patient's relatives, relevant for patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.status\">status</a><a name=\"FamilyMemberHistory.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">partial | completed | entered-in-error | health-unknown</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.patient\">patient</a><a name=\"FamilyMemberHistory.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Patient history is about</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.name\">name</a><a name=\"FamilyMemberHistory.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The family member described</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.relationship\">relationship</a><a name=\"FamilyMemberHistory.relationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Relationship to the subject</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.bornDate\">bornDate</a><a name=\"FamilyMemberHistory.bornDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(approximate) date of birth</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.ageAge\">ageAge</a><a name=\"FamilyMemberHistory.ageAge\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Age\">Age</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(approximate) age</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.deceasedBoolean\">deceasedBoolean</a><a name=\"FamilyMemberHistory.deceasedBoolean\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Dead? How old/when?</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.reasonCode\">reasonCode</a><a name=\"FamilyMemberHistory.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Why was family member history performed?</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "NCDTHFamilyMemberHistory"];
-  fhir:StructureDefinition.title [ fhir:value "NCD Thailand FamilyMemberHistory Profile"];
+  fhir:StructureDefinition.title [ fhir:value "NCD TH FamilyMemberHistory Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-22T11:05:10+07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-02-22T23:30:09+07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -717,6 +717,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
@@ -830,6 +831,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -898,7 +900,7 @@
        fhir:ElementDefinition.short [ fhir:value "The family member described" ];
        fhir:ElementDefinition.definition [ fhir:value "This will either be a name or a description; e.g. \"Aunt Susan\", \"my cousin with the red hair\"." ];
        fhir:ElementDefinition.requirements [ fhir:value "Allows greater ease in ensuring the same person is being talked about." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "FamilyMemberHistory.name" ];
@@ -921,6 +923,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -957,6 +960,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -1027,6 +1031,15 @@
        fhir:index 19;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.born[x]" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.born[x]" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
+       ];
        fhir:ElementDefinition.short [ fhir:value "(approximate) date of birth" ];
        fhir:ElementDefinition.definition [ fhir:value "The actual or approximate date of birth of the relative." ];
        fhir:ElementDefinition.requirements [ fhir:value "Allows calculation of the relative's age." ];
@@ -1039,13 +1052,7 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
-       ], [
-         fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "date" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "fhs-1";
@@ -1072,8 +1079,60 @@
        ]
      ], [
        fhir:index 20;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.born[x]:bornDate" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.born[x]" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "bornDate" ];
+       fhir:ElementDefinition.short [ fhir:value "(approximate) date of birth" ];
+       fhir:ElementDefinition.definition [ fhir:value "The actual or approximate date of birth of the relative." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Allows calculation of the relative's age." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "FamilyMemberHistory.born[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "fhs-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)" ]
+       ]
+     ], [
+       fhir:index 21;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.age[x]" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.age[x]" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
+       ];
        fhir:ElementDefinition.short [ fhir:value "(approximate) age" ];
        fhir:ElementDefinition.definition [ fhir:value "The age of the relative at the time the family member history is recorded." ];
        fhir:ElementDefinition.comment [ fhir:value "use estimatedAge to indicate whether the age is actual or not." ];
@@ -1088,12 +1147,6 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Age" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "fhs-1";
@@ -1119,7 +1172,51 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=\"age\"].value" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.age[x]:ageAge" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.age[x]" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "ageAge" ];
+       fhir:ElementDefinition.short [ fhir:value "(approximate) age" ];
+       fhir:ElementDefinition.definition [ fhir:value "The age of the relative at the time the family member history is recorded." ];
+       fhir:ElementDefinition.comment [ fhir:value "use estimatedAge to indicate whether the age is actual or not." ];
+       fhir:ElementDefinition.requirements [ fhir:value "While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "FamilyMemberHistory.age[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Age" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "fhs-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=\"age\"].value" ]
+       ]
+     ], [
+       fhir:index 23;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.estimatedAge" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.estimatedAge" ];
        fhir:ElementDefinition.short [ fhir:value "Age is estimated?" ];
@@ -1157,9 +1254,18 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.deceased[x]" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.deceased[x]" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
+       ];
        fhir:ElementDefinition.short [ fhir:value "Dead? How old/when?" ];
        fhir:ElementDefinition.definition [ fhir:value "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1172,18 +1278,6 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.type.code [ fhir:value "Age" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
-       ], [
-         fhir:index 3;
-         fhir:ElementDefinition.type.code [ fhir:value "date" ]
-       ], [
-         fhir:index 4;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
@@ -1205,7 +1299,45 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.deceased[x]:deceasedBoolean" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.deceased[x]" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "deceasedBoolean" ];
+       fhir:ElementDefinition.short [ fhir:value "Dead? How old/when?" ];
+       fhir:ElementDefinition.definition [ fhir:value "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "FamilyMemberHistory.deceased[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role" ]
+       ]
+     ], [
+       fhir:index 26;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.reasonCode" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.reasonCode" ];
        fhir:ElementDefinition.short [ fhir:value "Why was family member history performed?" ];
@@ -1234,6 +1366,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -1263,7 +1396,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".reasonCode" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.reasonReference" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.reasonReference" ];
        fhir:ElementDefinition.short [ fhir:value "Why was family member history performed?" ];
@@ -1332,7 +1465,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=RSON].target" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.note" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.note" ];
        fhir:ElementDefinition.short [ fhir:value "General note about related person" ];
@@ -1372,7 +1505,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition" ];
        fhir:ElementDefinition.short [ fhir:value "Condition that the related person had" ];
@@ -1408,7 +1541,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION, value<Diagnosis]" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.id" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.id" ];
        fhir:ElementDefinition.representation [
@@ -1441,7 +1574,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.extension" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1496,7 +1629,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1556,7 +1689,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.code" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.code" ];
        fhir:ElementDefinition.short [ fhir:value "Condition suffered by relation" ];
@@ -1605,7 +1738,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".value" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.outcome" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.outcome" ];
        fhir:ElementDefinition.short [ fhir:value "deceased | permanent disability | etc." ];
@@ -1654,7 +1787,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "outboundRelationship[typeCode=OUTC)].target[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION].value" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.contributedToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.contributedToDeath" ];
        fhir:ElementDefinition.short [ fhir:value "Whether the condition contributed to the cause of death" ];
@@ -1685,7 +1818,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.onset[x]" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.onset[x]" ];
        fhir:ElementDefinition.short [ fhir:value "When condition first manifested" ];
@@ -1731,7 +1864,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\"Subject Age at measurement\", value<Diagnosis].value[@xsi:typeCode='TS' or 'IVL_TS']  Use originalText for string" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "FamilyMemberHistory.condition.note" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.condition.note" ];
        fhir:ElementDefinition.short [ fhir:value "Extra information about condition" ];
@@ -1773,6 +1906,65 @@
        fhir:index 0;
        fhir:Element.id [ fhir:value "FamilyMemberHistory" ];
        fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.status" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.status" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.patient" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.patient" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.name" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.name" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.relationship" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.relationship" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.bornDate" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.bornDate" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.ageAge" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.ageAge" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Age" ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.deceasedBoolean" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.deceasedBoolean" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "FamilyMemberHistory.reasonCode" ];
+       fhir:ElementDefinition.path [ fhir:value "FamilyMemberHistory.reasonCode" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ]
   ] .
 

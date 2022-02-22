@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExamplePhysical> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ObservationExamplePhysical"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
+       fhir:index 0;
+       fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ObservationExamplePhysical\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncdth-observation-social.html\">NCD TH Observation Profile - Social History</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social)</span></p><p><b>code</b>: Current activity level <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#99285-9)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Patient/PatientExample</a> \" ใจดี\"</p><p><b>encounter</b>: <a href=\"Encounter-EncounterExample.html\">Encounter/EncounterExample</a></p><p><b>effective</b>: 2022-02-20 02:28:17+0700</p><p><b>value</b>: Gets no exercise <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228445002)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "social" ];
+       fhir:Coding.display [ fhir:value "Social" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Social" ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:99285-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "99285-9" ];
+       fhir:Coding.display [ fhir:value "Current activity level" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Current activity level" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Patient/PatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/PatientExample" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Encounter/EncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/EncounterExample" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-02-20T14:28:17+07:00"^^xsd:dateTime];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:228445002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "228445002" ];
+       fhir:Coding.display [ fhir:value "Gets no exercise" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Gets no exercise" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExamplePhysical.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

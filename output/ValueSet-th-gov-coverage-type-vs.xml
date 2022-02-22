@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="th-gov-coverage-type-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-th-gov-coverage-type-cs.html"><code>https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/3.0.0/CodeSystem-coverage-selfpay.html"><code>http://terminology.hl7.org/CodeSystem/coverage-selfpay</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-th-gov-coverage-type-cs.html"><code>https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs</code></a></li><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-coverage-type.html">http://hl7.org/fhir/ValueSet/coverage-type</a></li></ul></div>
   </text>
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/th-gov-coverage-type-vs"/>
   <version value="0.1.0"/>
   <name value="THGovernmentCoverageTypeVS"/>
   <title value="Thai Government Coverage Type Value Set"/>
   <status value="active"/>
-  <date value="2022-02-22T11:05:10+07:00"/>
+  <date value="2022-02-22T23:30:09+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
@@ -19,7 +19,7 @@
       <value value="https://sil-th.github.io/"/>
     </telecom>
   </contact>
-  <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย"/>
+  <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -32,7 +32,7 @@
       <system value="https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"/>
     </include>
     <include>
-      <system value="http://terminology.hl7.org/CodeSystem/coverage-selfpay"/>
+      <valueSet value="http://hl7.org/fhir/ValueSet/coverage-type"/>
     </include>
   </compose>
 </ValueSet>

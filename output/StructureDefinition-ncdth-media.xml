@@ -3,7 +3,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ncdth-media"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media">Media</a><a name="Media"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/media.html">Media</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media">Media</a><a name="Media"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/media.html">Media</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.type">type</a><a name="Media.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Classification of media as image, video, or audio</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.modality">modality</a><a name="Media.modality"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The type of acquisition equipment/process</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.subject">subject</a><a name="Media.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/group.html">Group</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/device.html">Device</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/specimen.html">Specimen</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/location.html">Location</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who/What this Media is a record of</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.encounter">encounter</a><a name="Media.encounter"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Encounter associated with media</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.createdDateTime">createdDateTime</a><a name="Media.createdDateTime"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">When Media was collected</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.operator">operator</a><a name="Media.operator"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/organization.html">Organization</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/device.html">Device</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The person who generated the image</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-media-definitions.html#Media.content">content</a><a name="Media.content"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Actual Media - reference or data</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
@@ -15,9 +22,9 @@
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media"/>
   <version value="0.1.0"/>
   <name value="NCDTHMedia"/>
-  <title value="NCD Thailand Media Profile"/>
+  <title value="NCD TH Media Profile"/>
   <status value="active"/>
-  <date value="2022-02-22T11:05:10+07:00"/>
+  <date value="2022-02-22T23:30:09+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
@@ -592,6 +599,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -633,6 +641,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -726,6 +735,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -775,6 +785,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -792,6 +803,14 @@
     </element>
     <element id="Media.created[x]">
       <path value="Media.created[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="closed"/>
+      </slicing>
       <short value="When Media was collected"/>
       <definition value="The date and time(s) at which the media was collected."/>
       <alias value="timing"/>
@@ -805,8 +824,44 @@
       <type>
         <code value="dateTime"/>
       </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="workflow"/>
+        <map value="Event.occurrence[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.done[x]"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".effectiveTime"/>
+      </mapping>
+    </element>
+    <element id="Media.created[x]:createdDateTime">
+      <path value="Media.created[x]"/>
+      <sliceName value="createdDateTime"/>
+      <short value="When Media was collected"/>
+      <definition value="The date and time(s) at which the media was collected."/>
+      <alias value="timing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Media.created[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
       <type>
-        <code value="Period"/>
+        <code value="dateTime"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -816,6 +871,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -898,6 +954,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -1236,6 +1293,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -1285,6 +1343,39 @@
   <differential>
     <element id="Media">
       <path value="Media"/>
+    </element>
+    <element id="Media.type">
+      <path value="Media.type"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.modality">
+      <path value="Media.modality"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.subject">
+      <path value="Media.subject"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.encounter">
+      <path value="Media.encounter"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.createdDateTime">
+      <path value="Media.createdDateTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.operator">
+      <path value="Media.operator"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.content">
+      <path value="Media.content"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

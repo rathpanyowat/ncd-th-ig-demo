@@ -18,9 +18,9 @@
   "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient",
   "version": "0.1.0",
   "name": "NCDTHPatient",
-  "title": "NCD Thailand Patient Profile",
+  "title": "NCD TH Patient Profile",
   "status": "active",
-  "date": "2022-02-22T11:05:10+07:00",
+  "date": "2022-02-22T23:30:09+07:00",
   "publisher": "Standard and Interoperability Lab Thailand",
   "contact": [
     {

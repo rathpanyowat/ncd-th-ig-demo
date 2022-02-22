@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "ncdth-media"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media\">Media</a><a name=\"Media\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/media.html\">Media</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media\">Media</a><a name=\"Media\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/media.html\">Media</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.type\">type</a><a name=\"Media.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Classification of media as image, video, or audio</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.modality\">modality</a><a name=\"Media.modality\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The type of acquisition equipment/process</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.subject\">subject</a><a name=\"Media.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/group.html\">Group</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/location.html\">Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/What this Media is a record of</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.encounter\">encounter</a><a name=\"Media.encounter\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Encounter associated with media</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.createdDateTime\">createdDateTime</a><a name=\"Media.createdDateTime\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">When Media was collected</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.operator\">operator</a><a name=\"Media.operator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The person who generated the image</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-media-definitions.html#Media.content\">content</a><a name=\"Media.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Attachment\">Attachment</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Actual Media - reference or data</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "NCDTHMedia"];
-  fhir:StructureDefinition.title [ fhir:value "NCD Thailand Media Profile"];
+  fhir:StructureDefinition.title [ fhir:value "NCD TH Media Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-02-22T11:05:10+07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-02-22T23:30:09+07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -775,6 +775,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -828,6 +829,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -967,6 +969,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1030,6 +1033,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1049,6 +1053,15 @@
        fhir:index 18;
        fhir:Element.id [ fhir:value "Media.created[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Media.created[x]" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
+       ];
        fhir:ElementDefinition.short [ fhir:value "When Media was collected" ];
        fhir:ElementDefinition.definition [ fhir:value "The date and time(s) at which the media was collected." ];
        fhir:ElementDefinition.alias [
@@ -1065,9 +1078,6 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
@@ -1098,6 +1108,56 @@
        ]
      ], [
        fhir:index 19;
+       fhir:Element.id [ fhir:value "Media.created[x]:createdDateTime" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.created[x]" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "createdDateTime" ];
+       fhir:ElementDefinition.short [ fhir:value "When Media was collected" ];
+       fhir:ElementDefinition.definition [ fhir:value "The date and time(s) at which the media was collected." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "timing";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Media.created[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.occurrence[x]" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".effectiveTime" ]
+       ]
+     ], [
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Media.issued" ];
        fhir:ElementDefinition.path [ fhir:value "Media.issued" ];
        fhir:ElementDefinition.short [ fhir:value "Date/Time this version was made available" ];
@@ -1142,7 +1202,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "participation[typeCode=AUT].time" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Media.operator" ];
        fhir:ElementDefinition.path [ fhir:value "Media.operator" ];
        fhir:ElementDefinition.short [ fhir:value "The person who generated the image" ];
@@ -1199,6 +1259,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1219,7 +1280,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "0008,1060?" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Media.reasonCode" ];
        fhir:ElementDefinition.path [ fhir:value "Media.reasonCode" ];
        fhir:ElementDefinition.short [ fhir:value "Why was event performed?" ];
@@ -1277,7 +1338,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".reasonCode" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Media.bodySite" ];
        fhir:ElementDefinition.path [ fhir:value "Media.bodySite" ];
        fhir:ElementDefinition.short [ fhir:value "Observed body part" ];
@@ -1335,7 +1396,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "718497002 |Inherent location|" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Media.deviceName" ];
        fhir:ElementDefinition.path [ fhir:value "Media.deviceName" ];
        fhir:ElementDefinition.short [ fhir:value "Name of the device/manufacturer" ];
@@ -1375,7 +1436,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "0008,0070" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Media.device" ];
        fhir:ElementDefinition.path [ fhir:value "Media.device" ];
        fhir:ElementDefinition.short [ fhir:value "Observing Device" ];
@@ -1433,7 +1494,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "424226004 |Using device|" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Media.height" ];
        fhir:ElementDefinition.path [ fhir:value "Media.height" ];
        fhir:ElementDefinition.short [ fhir:value "Height of the image in pixels (photo/video)" ];
@@ -1473,7 +1534,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "0028,0010" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Media.width" ];
        fhir:ElementDefinition.path [ fhir:value "Media.width" ];
        fhir:ElementDefinition.short [ fhir:value "Width of the image in pixels (photo/video)" ];
@@ -1513,7 +1574,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "0028,0011" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Media.frames" ];
        fhir:ElementDefinition.path [ fhir:value "Media.frames" ];
        fhir:ElementDefinition.short [ fhir:value "Number of frames if > 1 (photo)" ];
@@ -1550,7 +1611,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=\"COMP].target[classCode=\"OBS\", moodCode=\"EVN\",code=\"<CODE>\"].value" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Media.duration" ];
        fhir:ElementDefinition.path [ fhir:value "Media.duration" ];
        fhir:ElementDefinition.short [ fhir:value "Length in seconds (audio / video)" ];
@@ -1591,7 +1652,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "~0028,0002" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Media.content" ];
        fhir:ElementDefinition.path [ fhir:value "Media.content" ];
        fhir:ElementDefinition.short [ fhir:value "Actual Media - reference or data" ];
@@ -1620,6 +1681,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1628,7 +1690,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".text" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Media.note" ];
        fhir:ElementDefinition.path [ fhir:value "Media.note" ];
        fhir:ElementDefinition.short [ fhir:value "Comments made about the media" ];
@@ -1679,6 +1741,47 @@
        fhir:index 0;
        fhir:Element.id [ fhir:value "Media" ];
        fhir:ElementDefinition.path [ fhir:value "Media" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "Media.type" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.type" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "Media.modality" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.modality" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "Media.subject" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.subject" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "Media.encounter" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.encounter" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "Media.createdDateTime" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.createdDateTime" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "Media.operator" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.operator" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "Media.content" ];
+       fhir:ElementDefinition.path [ fhir:value "Media.content" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ]
   ] .
 

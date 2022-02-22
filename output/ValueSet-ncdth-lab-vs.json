@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ncdth-lab-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://tmlt.this.or.th</code></li></ul></div>"
+  },
+  "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs",
+  "version": "0.1.0",
+  "name": "NCDTHLaboratoryVS",
+  "title": "NCD TH Laboratory Value Set",
+  "status": "active",
+  "date": "2022-02-22T23:30:09+07:00",
+  "publisher": "Standard and Interoperability Lab Thailand",
+  "contact": [
+    {
+      "name": "Standard and Interoperability Lab Thailand",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://sil-th.github.io/"
+        }
+      ]
+    }
+  ],
+  "description": "รหัสมาตรฐานการตรวจทางห้องปฏิบัติการที่ใช้ใน NCD IG",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "TH",
+          "display": "Thailand"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://tmlt.this.or.th"
+      }
+    ]
+  }
+}

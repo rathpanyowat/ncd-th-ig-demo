@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:FamilyMemberHistory</sch:title>
+    <sch:rule context="f:FamilyMemberHistory">
+      <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>FamilyMemberHistory</sch:title>
     <sch:rule context="f:FamilyMemberHistory">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
@@ -123,11 +129,13 @@
     <sch:title>FamilyMemberHistory.born[x] 1</sch:title>
     <sch:rule context="f:FamilyMemberHistory/f:born[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>FamilyMemberHistory.age[x] 1</sch:title>
     <sch:rule context="f:FamilyMemberHistory/f:age[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -140,6 +148,7 @@
   <sch:pattern>
     <sch:title>FamilyMemberHistory.deceased[x] 1</sch:title>
     <sch:rule context="f:FamilyMemberHistory/f:deceased[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

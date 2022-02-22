@@ -43,30 +43,35 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Media.status","","","",1,1,"","Y","Y","code {[]} {[]}
 ","preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown","The current state of the {{title}}.","A nominal state-transition diagram can be found in the [[event.html#statemachine | Event pattern]] documentationUnknown does not represent ""other"" - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.","","","","","","","","",,"required","Codes identifying the lifecycle stage of an event.","http://hl7.org/fhir/ValueSet/event-status|4.0.1","",,,,"Media.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status",".status","FiveWs.status","Varies by domain"
-"Media.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+"Media.type","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Classification of media as image, video, or audio","A code that classifies whether the media is an image, video or audio recording or some other media category.","","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"extensible","Codes for high level media categories.","http://hl7.org/fhir/ValueSet/media-type","",,,,"Media.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code","FiveWs.class"
-"Media.modality","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+"Media.modality","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","The type of acquisition equipment/process","Details of the type of the media - usually, how it was acquired (what type of device). If images sourced from a DICOM system, are wrapped in a Media resource, then this is the modality.","","","","","","","","","",,"example","Detailed information about the type of the image - its kind, purpose, or the kind of equipment used to generate it.","http://hl7.org/fhir/ValueSet/media-modality","",,,,"Media.modality",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.what[x]","0008,0060 | 0008,1032"
 "Media.view","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Imaging view, e.g. Lateral or Antero-posterior","The name of the imaging view e.g. Lateral or Antero-posterior (AP).","","","","","","","","","",,"example","Imaging view (projection) used when collecting an image.","http://hl7.org/fhir/ValueSet/media-view","",,,,"Media.view",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","DiagnosticImage.subjectOrientationCode"
-"Media.subject","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
+"Media.subject","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Who/What this Media is a record of","Who/What this Media is a record of.","","","","","","","","","",,,,,"",,,,"Media.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=""SUBJ""]???","FiveWs.subject[x]","FiveWs.subject","~0010,0020"
 "Media.encounter","","context
-","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Encounter associated with media","The encounter that establishes the context for this media.","This will typically be the encounter the media occurred within.","Links the Media to the Encounter context.","","","","","","","",,,,,"",,,,"Media.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.encounter",".inboundRelationship(typeCode=COMP].source[classCode<=PCPR, moodCode=EVN]","FiveWs.context"
 "Media.created[x]","","timing
 ","",0,1,"","","Y","dateTime {[]} {[]}
-Period {[]} {[]}","When Media was collected","The date and time(s) at which the media was collected.","","","","","","","","","",,,,,"",,,,"Media.created[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","When Media was collected","The date and time(s) at which the media was collected.","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Media.created[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]"
+"Media.created[x]","createdDateTime","timing
+","",0,1,"Y","","Y","dateTime {[]} {[]}
+","When Media was collected","The date and time(s) at which the media was collected.","","","","","","","","","",,,,,"",,,,"Media.created[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]"
 "Media.issued","","","",0,1,"","","Y","instant {[]} {[]}
 ","Date/Time this version was made available","The date and time this version of the media was made available to providers, typically after having been reviewed.","It may be the same as the [`lastUpdated` ](http://hl7.org/fhir/R4/resource-definitions.html#Meta.lastUpdated) time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that does not require the new version to be reviewed and verified again.","","","","","","","","",,,,,"",,,,"Media.issued",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","participation[typeCode=AUT].time","FiveWs.recorded","OBR.22 (or MSH.7), or perhaps OBX-19 (depends on who observation made)"
-"Media.operator","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+"Media.operator","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","The person who generated the image","The person who administered the collection of the image.","","","","","","","","","",,,,,"",,,,"Media.operator",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".participation[typeCode=""PERF""]???","FiveWs.actor","0008,1060?"
 "Media.reasonCode","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
@@ -95,7 +100,7 @@ If the use case requires BodySite to be handled as a separate resource (e.g. to 
 "Media.duration","","","",0,1,"","","Y","decimal {[]} {[]}
 ","Length in seconds (audio / video)","The duration of the recording in seconds - for audio and video.","The duration might differ from occurrencePeriod if recording was paused.","","","","","","","","",,,,,"",,,,"Media.duration",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""OBS"", moodCode=""EVN"",code=""<CODE>""].value","~0028,0002"
-"Media.content","","","",1,1,"","","Y","Attachment {[]} {[]}
+"Media.content","","","",1,1,"Y","","Y","Attachment {[]} {[]}
 ","Actual Media - reference or data","The actual content of the media - inline or by direct reference to the media source file.","Recommended content types: image/jpeg, image/png, image/tiff, video/mpeg, audio/mp4, application/dicom. Application/dicom can contain the transfer syntax as a parameter.  For media that covers a period of time (video/sound), the content.creationTime is the end time. Creation time is used for tracking, organizing versions and searching.","","","","","","","","",,,,,"",,,,"Media.content",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".text"
 "Media.note","","","",0,*,"","","","Annotation {[]} {[]}

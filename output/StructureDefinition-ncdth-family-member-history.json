@@ -3,7 +3,7 @@
   "id": "ncdth-family-member-history",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory\">FamilyMemberHistory</a><a name=\"FamilyMemberHistory\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/familymemberhistory.html\">FamilyMemberHistory</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about patient's relatives, relevant for patient</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory\">FamilyMemberHistory</a><a name=\"FamilyMemberHistory\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/familymemberhistory.html\">FamilyMemberHistory</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about patient's relatives, relevant for patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.status\">status</a><a name=\"FamilyMemberHistory.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">partial | completed | entered-in-error | health-unknown</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.patient\">patient</a><a name=\"FamilyMemberHistory.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Patient history is about</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.name\">name</a><a name=\"FamilyMemberHistory.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The family member described</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.relationship\">relationship</a><a name=\"FamilyMemberHistory.relationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Relationship to the subject</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.bornDate\">bornDate</a><a name=\"FamilyMemberHistory.bornDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(approximate) date of birth</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.ageAge\">ageAge</a><a name=\"FamilyMemberHistory.ageAge\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Age\">Age</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(approximate) age</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.deceasedBoolean\">deceasedBoolean</a><a name=\"FamilyMemberHistory.deceasedBoolean\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Dead? How old/when?</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ncdth-family-member-history-definitions.html#FamilyMemberHistory.reasonCode\">reasonCode</a><a name=\"FamilyMemberHistory.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Why was family member history performed?</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "extension": [
     {
@@ -18,9 +18,9 @@
   "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history",
   "version": "0.1.0",
   "name": "NCDTHFamilyMemberHistory",
-  "title": "NCD Thailand FamilyMemberHistory Profile",
+  "title": "NCD TH FamilyMemberHistory Profile",
   "status": "active",
-  "date": "2022-02-22T11:05:10+07:00",
+  "date": "2022-02-22T23:30:09+07:00",
   "publisher": "Standard and Interoperability Lab Thailand",
   "contact": [
     {
@@ -652,6 +652,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": true,
         "isModifierReason": "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
         "isSummary": true,
@@ -758,6 +759,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -827,7 +829,7 @@
         "short": "The family member described",
         "definition": "This will either be a name or a description; e.g. \"Aunt Susan\", \"my cousin with the red hair\".",
         "requirements": "Allows greater ease in ensuring the same person is being talked about.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "FamilyMemberHistory.name",
@@ -849,6 +851,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -885,6 +888,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "binding": {
@@ -951,6 +955,16 @@
       {
         "id": "FamilyMemberHistory.born[x]",
         "path": "FamilyMemberHistory.born[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
         "short": "(approximate) date of birth",
         "definition": "The actual or approximate date of birth of the relative.",
         "requirements": "Allows calculation of the relative's age.",
@@ -963,13 +977,7 @@
         },
         "type": [
           {
-            "code": "Period"
-          },
-          {
             "code": "date"
-          },
-          {
-            "code": "string"
           }
         ],
         "condition": [
@@ -995,28 +1003,22 @@
         ]
       },
       {
-        "id": "FamilyMemberHistory.age[x]",
-        "path": "FamilyMemberHistory.age[x]",
-        "short": "(approximate) age",
-        "definition": "The age of the relative at the time the family member history is recorded.",
-        "comment": "use estimatedAge to indicate whether the age is actual or not.",
-        "requirements": "While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.",
+        "id": "FamilyMemberHistory.born[x]:bornDate",
+        "path": "FamilyMemberHistory.born[x]",
+        "sliceName": "bornDate",
+        "short": "(approximate) date of birth",
+        "definition": "The actual or approximate date of birth of the relative.",
+        "requirements": "Allows calculation of the relative's age.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.age[x]",
+          "path": "FamilyMemberHistory.born[x]",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "Age"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "string"
+            "code": "date"
           }
         ],
         "condition": [
@@ -1032,6 +1034,101 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)"
+          }
+        ]
+      },
+      {
+        "id": "FamilyMemberHistory.age[x]",
+        "path": "FamilyMemberHistory.age[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "short": "(approximate) age",
+        "definition": "The age of the relative at the time the family member history is recorded.",
+        "comment": "use estimatedAge to indicate whether the age is actual or not.",
+        "requirements": "While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "FamilyMemberHistory.age[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Age"
+          }
+        ],
+        "condition": [
+          "fhs-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=\"age\"].value"
+          }
+        ]
+      },
+      {
+        "id": "FamilyMemberHistory.age[x]:ageAge",
+        "path": "FamilyMemberHistory.age[x]",
+        "sliceName": "ageAge",
+        "short": "(approximate) age",
+        "definition": "The age of the relative at the time the family member history is recorded.",
+        "comment": "use estimatedAge to indicate whether the age is actual or not.",
+        "requirements": "While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "FamilyMemberHistory.age[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Age"
+          }
+        ],
+        "condition": [
+          "fhs-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -1080,6 +1177,16 @@
       {
         "id": "FamilyMemberHistory.deceased[x]",
         "path": "FamilyMemberHistory.deceased[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
         "short": "Dead? How old/when?",
         "definition": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
         "min": 0,
@@ -1092,18 +1199,6 @@
         "type": [
           {
             "code": "boolean"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "string"
           }
         ],
         "constraint": [
@@ -1116,6 +1211,44 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role"
+          }
+        ]
+      },
+      {
+        "id": "FamilyMemberHistory.deceased[x]:deceasedBoolean",
+        "path": "FamilyMemberHistory.deceased[x]",
+        "sliceName": "deceasedBoolean",
+        "short": "Dead? How old/when?",
+        "definition": "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "FamilyMemberHistory.deceased[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -1153,6 +1286,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "binding": {
@@ -1658,6 +1792,68 @@
       {
         "id": "FamilyMemberHistory",
         "path": "FamilyMemberHistory"
+      },
+      {
+        "id": "FamilyMemberHistory.status",
+        "path": "FamilyMemberHistory.status",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.name",
+        "path": "FamilyMemberHistory.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.bornDate",
+        "path": "FamilyMemberHistory.bornDate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.ageAge",
+        "path": "FamilyMemberHistory.ageAge",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Age"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.deceasedBoolean",
+        "path": "FamilyMemberHistory.deceasedBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.reasonCode",
+        "path": "FamilyMemberHistory.reasonCode",
+        "mustSupport": true
       }
     ]
   }

@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:AllergyIntolerance</sch:title>
+    <sch:rule context="f:AllergyIntolerance">
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>AllergyIntolerance</sch:title>
     <sch:rule context="f:AllergyIntolerance">
       <sch:assert test="f:verificationStatus/f:coding/f:code/@value='entered-in-error' or exists(f:clinicalStatus)">AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error. (inherited)</sch:assert>

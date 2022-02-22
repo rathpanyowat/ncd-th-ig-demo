@@ -3,7 +3,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ncdth-condition"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition">Condition</a><a name="Condition"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Detailed information about conditions, problems or diagnoses</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition">Condition</a><a name="Condition"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Detailed information about conditions, problems or diagnoses</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.clinicalStatus">clinicalStatus</a><a name="Condition.clinicalStatus"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">active | recurrence | relapse | inactive | remission | resolved</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.verificationStatus">verificationStatus</a><a name="Condition.verificationStatus"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">unconfirmed | provisional | differential | confirmed | refuted | entered-in-error</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.category">category</a><a name="Condition.category"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">problem-list-item | encounter-diagnosis</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.severity">severity</a><a name="Condition.severity"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Subjective severity of condition</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.code">code</a><a name="Condition.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identification of the condition, problem or diagnosis</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.subject">subject</a><a name="Condition.subject"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/group.html">Group</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who has the condition?</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ncdth-condition-definitions.html#Condition.onset[x]">onset[x]</a><a name="Condition.onset_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Estimated or actual date,  date-time, or age</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
@@ -15,9 +22,9 @@
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"/>
   <version value="0.1.0"/>
   <name value="NCDTHCondition"/>
-  <title value="NCD Thailand Condition Profile"/>
+  <title value="NCD TH Condition Profile"/>
   <status value="active"/>
-  <date value="2022-02-22T11:05:10+07:00"/>
+  <date value="2022-02-22T23:30:09+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
@@ -500,6 +507,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="true"/>
       <isModifierReason value="This element is labeled as a modifier because the status contains codes that mark the condition as no longer active."/>
       <isSummary value="true"/>
@@ -557,6 +565,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="true"/>
       <isModifierReason value="This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."/>
       <isSummary value="true"/>
@@ -616,6 +625,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -666,6 +676,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -703,7 +714,7 @@
       <definition value="Identification of the condition, problem or diagnosis."/>
       <requirements value="0..1 to account for primarily narrative only resources."/>
       <alias value="type"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Condition.code"/>
@@ -721,6 +732,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -828,6 +840,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -929,6 +942,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -1641,6 +1655,35 @@
   <differential>
     <element id="Condition">
       <path value="Condition"/>
+    </element>
+    <element id="Condition.clinicalStatus">
+      <path value="Condition.clinicalStatus"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.severity">
+      <path value="Condition.severity"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

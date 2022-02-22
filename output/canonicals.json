@@ -70,11 +70,32 @@
     "name": "NCDTHMedia"
   },
   {
-    "id": "ncdth-observation",
+    "id": "ncdth-observation-lab",
     "type": "StructureDefinition",
-    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab",
     "version": "0.1.0",
-    "name": "NCDTHObservation"
+    "name": "NCDTHObservationLab"
+  },
+  {
+    "id": "ncdth-observation-pe-survey",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey",
+    "version": "0.1.0",
+    "name": "NCDTHObservationPESurvey"
+  },
+  {
+    "id": "ncdth-observation-social",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social",
+    "version": "0.1.0",
+    "name": "NCDTHObservationSocial"
+  },
+  {
+    "id": "ncdth-observation-vital",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital",
+    "version": "0.1.0",
+    "name": "NCDTHObservationVital"
   },
   {
     "id": "ncdth-organization",
@@ -89,6 +110,20 @@
     "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient",
     "version": "0.1.0",
     "name": "NCDTHPatient"
+  },
+  {
+    "id": "ncdth-lab-vs",
+    "type": "ValueSet",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs",
+    "version": "0.1.0",
+    "name": "NCDTHLaboratoryVS"
+  },
+  {
+    "id": "ncdth-vital-vs",
+    "type": "ValueSet",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-vital-vs",
+    "version": "0.1.0",
+    "name": "NCDTHVitalVS"
   },
   {
     "id": "th-gov-coverage-type-vs",

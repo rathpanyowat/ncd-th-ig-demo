@@ -32,9 +32,9 @@
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient"/>
   <version value="0.1.0"/>
   <name value="NCDTHPatient"/>
-  <title value="NCD Thailand Patient Profile"/>
+  <title value="NCD TH Patient Profile"/>
   <status value="active"/>
-  <date value="2022-02-22T11:05:10+07:00"/>
+  <date value="2022-02-22T23:30:09+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>

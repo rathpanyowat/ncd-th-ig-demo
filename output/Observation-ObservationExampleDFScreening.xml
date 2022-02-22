@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationExampleDFScreening"/>
+  <meta>
+    <profile value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "ObservationExampleDFScreening" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncdth-observation-pe-survey.html">NCD TH Observation Profile - PE &amp; Survey</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: Diabetic foot risk assessment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#394683006)</span></p><p><b>subject</b>: <a href="Patient-PatientExample.html">Patient/PatientExample</a> " ใจดี"</p><p><b>encounter</b>: <a href="Encounter-EncounterExample.html">Encounter/EncounterExample</a></p><p><b>effective</b>: 2022-02-20 02:28:17+0700</p><p><b>value</b>: Foot normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#299477002)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+    <text value="Exam"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394683006"/>
+      <display value="Diabetic foot risk assessment"/>
+    </coding>
+    <text value="Diabetic foot risk assessment"/>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncounterExample"/>
+  </encounter>
+  <effectiveDateTime value="2022-02-20T14:28:17+07:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="299477002"/>
+      <display value="Foot normal"/>
+    </coding>
+    <text value="Foot normal"/>
+  </valueCodeableConcept>
+</Observation>

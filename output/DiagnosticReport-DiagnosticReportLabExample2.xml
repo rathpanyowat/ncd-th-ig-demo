@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="DiagnosticReportLabExample2"/>
+  <meta>
+    <profile value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://tmlt.this.or.th 320262}">Metabolic screen</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>สมชาย ใจดี </b> (no stated gender) 1974-12-25 ( id: 1222233333445 (OFFICIAL))</td></tr><tr><td>When For</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td>Reported</td><td>2022-02-20 02:28:17+0700</td></tr></table><p><b>Report Details</b></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://tmlt.this.or.th"/>
+      <code value="320262"/>
+      <display value="Metabolic screen"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/EncounterExample"/>
+  </encounter>
+  <effectiveDateTime value="2022-02-20T14:28:17+07:00"/>
+  <issued value="2022-02-20T14:28:17+07:00"/>
+</DiagnosticReport>
