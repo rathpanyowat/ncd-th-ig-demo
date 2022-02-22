@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="7b420d88-44ef-451a-a6dc-c52ba67ffb82"/>
+  <meta>
+    <lastUpdated value="2022-02-22T11:05:10.020+07:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/th-gov-coverage-type-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="th-gov-coverage-type-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="http://terminology.hl7.org/3.0.0/CodeSystem-coverage-selfpay.html">Coverage SelfPay Codes v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-th-gov-coverage-type-cs.html">Thai Government Coverage Type Code System v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---rathpanyowat.github.io-ncd-th-ig-demo-CodeSystem-th-gov-coverage-type-cs-UC"> </a>
+                  <a href="CodeSystem-th-gov-coverage-type-cs.html#th-gov-coverage-type-cs-UC">UC</a>
+                </td>
+                <td>https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs</td>
+                <td>Universal Coverage</td>
+                <td>ประกันสุขภาพถ้วนหน้า</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---rathpanyowat.github.io-ncd-th-ig-demo-CodeSystem-th-gov-coverage-type-cs-SS"> </a>
+                  <a href="CodeSystem-th-gov-coverage-type-cs.html#th-gov-coverage-type-cs-SS">SS</a>
+                </td>
+                <td>https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs</td>
+                <td>Social Security</td>
+                <td>ประกันสังคม</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---rathpanyowat.github.io-ncd-th-ig-demo-CodeSystem-th-gov-coverage-type-cs-CS"> </a>
+                  <a href="CodeSystem-th-gov-coverage-type-cs.html#th-gov-coverage-type-cs-CS">CS</a>
+                </td>
+                <td>https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs</td>
+                <td>Civil Servant Medical Benefit Scheme</td>
+                <td>รักษาพยาบาลข้าราชการ</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-coverage-selfpay-pay"> </a>
+                  <a href="http://terminology.hl7.org/3.0.0/CodeSystem-coverage-selfpay.html#coverage-selfpay-pay">pay</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/coverage-selfpay</td>
+                <td>Pay</td>
+                <td>An individual or organization is paying directly for goods and services.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/th-gov-coverage-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="THGovernmentCoverageTypeVS"/>
+        <title value="Thai Government Coverage Type Value Set"/>
+        <status value="active"/>
+        <date value="2022-02-22T11:05:10+07:00"/>
+        <publisher value="Standard and Interoperability Lab Thailand"/>
+        <contact>
+          <name value="Standard and Interoperability Lab Thailand"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://sil-th.github.io/"/>
+          </telecom>
+        </contact>
+        <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="TH"/>
+            <display value="Thailand"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a0c67be5-a34d-455b-b387-961b53be8de9"/>
+          <timestamp value="2022-02-22T11:05:21+07:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/coverage-selfpay|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"/>
+            <code value="UC"/>
+            <display value="Universal Coverage"/>
+          </contains>
+          <contains>
+            <system value="https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"/>
+            <code value="SS"/>
+            <display value="Social Security"/>
+          </contains>
+          <contains>
+            <system value="https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"/>
+            <code value="CS"/>
+            <display value="Civil Servant Medical Benefit Scheme"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/coverage-selfpay"/>
+            <code value="pay"/>
+            <display value="Pay"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

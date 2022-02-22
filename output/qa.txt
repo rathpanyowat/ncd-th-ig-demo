@@ -1,0 +1,50 @@
+﻿ThaiNCDIG : Validation Results
+=========================================
+
+err = 0, warn = 10, info = 1
+IG Publisher Version: 1.1.106
+Generated Tue Feb 22 11:05:31 ICT 2022. FHIR version 4.0.1 for ncd-th-ig#0.1.0 (canonical = https://rathpanyowat.github.io/ncd-th-ig-demo)
+ Build Errors : 0 / 0 / 0
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/CodeSystem-th-gov-coverage-type-cs : 0 / 0 / 2
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/ImplementationGuide-ncd-th-ig : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-allergy-intolerance : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-condition : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-coverage : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-diagnostic-report-lab : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-encounter : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-episode-of-care : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-family-member-history : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-media : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-observation : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-organization : 0 / 1 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/StructureDefinition-ncdth-patient : 0 / 0 / 1
+ /Users/rathpanyowat/Desktop/ThaiNCDIG/fsh-generated/resources/ValueSet-th-gov-coverage-type-vs : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/CodeSystem-th-gov-coverage-type-cs.json ==
+INFORMATION: CodeSystem/th-gov-coverage-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/ImplementationGuide-ncd-th-ig.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-ncdth-allergy-intolerance.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-condition.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-coverage.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-diagnostic-report-lab.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-encounter.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-episode-of-care.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-family-member-history.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-media.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-observation.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-organization.json ==
+WARNING: StructureDefinition.where(url = 'https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ncdth-patient.json ==
+== fsh-generated/resources/ValueSet-th-gov-coverage-type-vs.json ==

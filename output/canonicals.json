@@ -1,0 +1,100 @@
+[
+  {
+    "id": "th-gov-coverage-type-cs",
+    "type": "CodeSystem",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs",
+    "version": "0.1.0",
+    "name": "THGovernmentCoverageTypeCS"
+  },
+  {
+    "id": "ncd-th-ig",
+    "type": "ImplementationGuide",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig",
+    "version": "0.1.0",
+    "name": "ThaiNCDIG"
+  },
+  {
+    "id": "ncdth-allergy-intolerance",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance",
+    "version": "0.1.0",
+    "name": "NCDTHAllergyIntolerance"
+  },
+  {
+    "id": "ncdth-condition",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition",
+    "version": "0.1.0",
+    "name": "NCDTHCondition"
+  },
+  {
+    "id": "ncdth-coverage",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage",
+    "version": "0.1.0",
+    "name": "NCDTHCoverage"
+  },
+  {
+    "id": "ncdth-diagnostic-report-lab",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab",
+    "version": "0.1.0",
+    "name": "NCDTHDiagnosticReportLab"
+  },
+  {
+    "id": "ncdth-encounter",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter",
+    "version": "0.1.0",
+    "name": "NCDTHEncounter"
+  },
+  {
+    "id": "ncdth-episode-of-care",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care",
+    "version": "0.1.0",
+    "name": "NCDTHEpisodeOfCare"
+  },
+  {
+    "id": "ncdth-family-member-history",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history",
+    "version": "0.1.0",
+    "name": "NCDTHFamilyMemberHistory"
+  },
+  {
+    "id": "ncdth-media",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media",
+    "version": "0.1.0",
+    "name": "NCDTHMedia"
+  },
+  {
+    "id": "ncdth-observation",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation",
+    "version": "0.1.0",
+    "name": "NCDTHObservation"
+  },
+  {
+    "id": "ncdth-organization",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization",
+    "version": "0.1.0",
+    "name": "NCDTHOrganization"
+  },
+  {
+    "id": "ncdth-patient",
+    "type": "StructureDefinition",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient",
+    "version": "0.1.0",
+    "name": "NCDTHPatient"
+  },
+  {
+    "id": "th-gov-coverage-type-vs",
+    "type": "ValueSet",
+    "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/th-gov-coverage-type-vs",
+    "version": "0.1.0",
+    "name": "THGovernmentCoverageTypeVS"
+  }
+]
