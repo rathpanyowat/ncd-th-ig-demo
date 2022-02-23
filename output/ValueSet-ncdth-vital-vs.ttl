@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "NCDTHVitalVS"];
   fhir:ValueSet.title [ fhir:value "NCD TH Vital Signs Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-02-22T23:30:09+07:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-02-23T19:35:19+07:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io/" ]
+       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "รหัสจากระบบ LOINC ในการบันทึกชนิดการตรวจ vital signs"];

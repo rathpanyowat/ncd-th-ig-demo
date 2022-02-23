@@ -29,18 +29,18 @@
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
   <version value="0.1.0"/>
   <name value="NCDTHDiagnosticReportLab"/>
-  <title value="NCD TH DiagnosticReport Profile for Lab Report"/>
+  <title value="DiagnosticReport Profile for Lab (NCD TH)"/>
   <status value="active"/>
-  <date value="2022-02-22T23:30:09+07:00"/>
+  <date value="2022-02-23T19:35:19+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
     <telecom>
       <system value="url"/>
-      <value value="https://sil-th.github.io/"/>
+      <value value="https://sil-th.github.io"/>
     </telecom>
   </contact>
-  <description value="Profile สำหรับ DiagnosticReport resource"/>
+  <description value="ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

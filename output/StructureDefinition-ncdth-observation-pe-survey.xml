@@ -44,18 +44,18 @@
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
   <version value="0.1.0"/>
   <name value="NCDTHObservationPESurvey"/>
-  <title value="NCD TH Observation Profile - PE &amp; Survey"/>
+  <title value="Observation Profile - PE &amp; Survey (NCD TH)"/>
   <status value="active"/>
-  <date value="2022-02-22T23:30:09+07:00"/>
+  <date value="2022-02-23T19:35:19+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
     <telecom>
       <system value="url"/>
-      <value value="https://sil-th.github.io/"/>
+      <value value="https://sil-th.github.io"/>
     </telecom>
   </contact>
-  <description value="Profile สำหรับ Observation resource - PE &amp; Survey"/>
+  <description value="ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

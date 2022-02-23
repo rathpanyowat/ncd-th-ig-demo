@@ -10,7 +10,7 @@
   "name": "NCDTHLaboratoryVS",
   "title": "NCD TH Laboratory Value Set",
   "status": "active",
-  "date": "2022-02-22T23:30:09+07:00",
+  "date": "2022-02-23T19:35:19+07:00",
   "publisher": "Standard and Interoperability Lab Thailand",
   "contact": [
     {
@@ -18,7 +18,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://sil-th.github.io/"
+          "value": "https://sil-th.github.io"
         }
       ]
     }

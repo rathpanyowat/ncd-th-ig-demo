@@ -18,9 +18,9 @@
   "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance",
   "version": "0.1.0",
   "name": "NCDTHAllergyIntolerance",
-  "title": "NCD TH AllergyIntolerance Profile",
+  "title": "AllergyIntolerance (NCD TH)",
   "status": "active",
-  "date": "2022-02-22T23:30:09+07:00",
+  "date": "2022-02-23T19:35:19+07:00",
   "publisher": "Standard and Interoperability Lab Thailand",
   "contact": [
     {
@@ -28,12 +28,12 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://sil-th.github.io/"
+          "value": "https://sil-th.github.io"
         }
       ]
     }
   ],
-  "description": "Profile สำหรับ AllergyIntolerance resource",
+  "description": "ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร",
   "jurisdiction": [
     {
       "coding": [

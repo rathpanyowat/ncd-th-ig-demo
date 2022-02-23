@@ -10,13 +10,13 @@
   <name value="THGovernmentCoverageTypeVS"/>
   <title value="Thai Government Coverage Type Value Set"/>
   <status value="active"/>
-  <date value="2022-02-22T23:30:09+07:00"/>
+  <date value="2022-02-23T19:35:19+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
     <telecom>
       <system value="url"/>
-      <value value="https://sil-th.github.io/"/>
+      <value value="https://sil-th.github.io"/>
     </telecom>
   </contact>
   <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด"/>

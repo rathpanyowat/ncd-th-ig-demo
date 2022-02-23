@@ -1,7 +1,7 @@
-Instance: PatientExample
+Instance: patient-example
 InstanceOf: NCDTHPatient
-Title: "NCD TH Patient Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม NCD Thailand Patient Profile"
+Title: "Patient"
+Description: "ตัวอย่างข้อมูลคนไข้"
 
 * identifier
   * use = #official
@@ -41,10 +41,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
   * gender = #female
 
 
-Instance: OrganizationExample
+Instance: organization-example
 InstanceOf: NCDTHOrganization
-Title: "NCD TH Organization Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Organization Profile"
+Title: "Organization"
+Description: "ตัวอย่างข้อมูลโรงพยาบาล"
 
 * identifier
   * system = "http://thcc.or.th/hcode"
@@ -61,22 +61,22 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
   * system = #phone
   * value = "+66 (333) 2222"
 
-Instance: CoverageExample
+Instance: coverage-example
 InstanceOf: NCDTHCoverage
-Title: "NCD TH Coverage Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Coverage Profile"
+Title: "Coverage"
+Description: "ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง"
 
 * status = #active
 * type.coding[0] = THGovernmentCoverageTypeCS#UC "Universal Coverage"
 * type.coding[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#PUBLICPOL "public healthcare"
-* beneficiary = Reference(PatientExample)
+* beneficiary = Reference(patient-example)
 * payor
   * display = "Government"
 
-Instance: EpisodeOfCareExample
+Instance: episode-of-care-example
 InstanceOf: NCDTHEpisodeOfCare
-Title: "NCD TH EpisodeOfCare Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม EpisodeOfCare Profile"
+Title: "EpisodeOfCare"
+Description: "ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง"
 
 * identifier
   * system = "http://examplehospital.com/episode"
@@ -84,20 +84,20 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
 * status = #active
 * type = http://terminology.hl7.org/CodeSystem/episodeofcare-type#hacc "Home and Community Care"
 * diagnosis[0]
-  * condition = Reference(ConditionExample1)
+  * condition = Reference(condition-example1)
 * diagnosis[+]
-  * condition = Reference(ConditionExample2)
-* patient = Reference(PatientExample)
-* managingOrganization = Reference(OrganizationExample)
+  * condition = Reference(condition-example2)
+* patient = Reference(patient-example)
+* managingOrganization = Reference(organization-example)
 * period
   * start = "2022-02-02"
 * careManager = Reference(Practitioner) // TODO
 * team = Reference(CareTeam) // TODO
 
-Instance: EncounterExample
+Instance: encounter-example
 InstanceOf: NCDTHEncounter
-Title: "NCD TH Encounter Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Encounter Profile"
+Title: "Encounter"
+Description: "ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย"
 
 * identifier
   * system = "http://examplehospital.com/episode"
@@ -105,20 +105,20 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
 * type = $SCT#703040004 "Agreeing on diabetes care plan"
-* subject = Reference(PatientExample)
-* episodeOfCare = Reference(EpisodeOfCareExample)
+* subject = Reference(patient-example)
+* episodeOfCare = Reference(episode-of-care-example)
 * participant
   * type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PPRF "primary performer"
   * individual = Reference(Practitioner) // TODO
-* serviceProvider = Reference(OrganizationExample)
+* serviceProvider = Reference(organization-example)
 
-Instance: FamilyMemberHistoryExample
+Instance: family-member-history-example
 InstanceOf: NCDTHFamilyMemberHistory
-Title: "NCD TH FamilyMemberHistory Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม FamilyMemberHistory Profile"
+Title: "FamilyMemberHistory"
+Description: "ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง"
 
 * status = #completed
-* patient = Reference(PatientExample)
+* patient = Reference(patient-example)
 * name = "นางสมหมาย ใจดี"
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "mother"
 * bornDate = "1934-05-06"
@@ -126,36 +126,36 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
 * deceasedBoolean = true
 * reasonCode = $SCT#363406005 "Malignant neoplasm of colon"
 
-Instance: ConditionExample1
+Instance: condition-example1
 InstanceOf: NCDTHCondition
-Title: "NCD TH Condition Example 1 - Hypertension"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Condition Profile"
+Title: "Condition 1 - Hypertension"
+Description: "ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item "Problem List Item"
 * severity = $SCT#255604002 "Mild"
 * code = $SCT#38341003 "Hypertension"
-* subject = Reference(PatientExample)
+* subject = Reference(patient-example)
 * onsetDateTime = "2016"
 
-Instance: ConditionExample2
+Instance: condition-example2
 InstanceOf: NCDTHCondition
-Title: "NCD TH Condition Example 2 - Diabetes Mellitus"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Condition Profile"
+Title: "Condition 2 - Diabetes Mellitus"
+Description: "ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item "Problem List Item"
 * severity = $SCT#255604002 "Mild"
 * code = $SCT#473127005 "Suspected diabetes mellitus"
-* subject = Reference(PatientExample)
+* subject = Reference(patient-example)
 * onsetDateTime = "2022-01-31"
 
-Instance: DiagnosticReportLabExample1
+Instance: diagnostic-report-lab-example1
 InstanceOf: NCDTHDiagnosticReportLab
-Title: "NCD TH DiagnosticReport for Lab Report Example - Lipid Profile"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Lipid Profile"
+Title: "DiagnosticReport - Lab Lipid Profile"
+Description: "ตัวอย่างการรายงานผล Lipid Profile"
 
 * status = #final
 * category
@@ -165,16 +165,19 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
   * coding.system = "http://tmlt.this.or.th"
   * coding.code = #320259
   * coding.display = "Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T13:28:17+07:00"
 * issued = "2022-02-20T13:28:17+07:00"
-// * result  TODO
+* result[0] = Reference(observation-example-chol)
+* result[+] = Reference(observation-example-hdl)
+* result[+] = Reference(observation-example-ldl)
+* result[+] = Reference(observation-example-tg)
 
-Instance: DiagnosticReportLabExample2
+Instance: diagnostic-report-lab-example2
 InstanceOf: NCDTHDiagnosticReportLab
-Title: "NCD TH DiagnosticReport for Lab Report Example - Metabolic Profile"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Metabolic Profile"
+Title: "DiagnosticReport - Lab Metabolic Profile"
+Description: "ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)"
 
 * status = #final
 * category
@@ -184,17 +187,20 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
   * coding.system = "http://tmlt.this.or.th"
   * coding.code = #320262
   * coding.display = "Metabolic screen"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * issued = "2022-02-20T14:28:17+07:00"
-// * result  TODO
+* result[0] = Reference(observation-example-fbs)
+* result[+] = Reference(observation-example-rbs)
+* result[+] = Reference(observation-example-bun)
+* result[+] = Reference(observation-example-cr)
 
 
-Instance: ObservationExampleAge
+Instance: observation-example-age
 InstanceOf: NCDTHObservationVital
-Title: "NCD TH Observation - Age"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"
+Title: "Observation - Age"
+Description: "ตัวอย่างข้อมูลอายุของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -208,15 +214,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #30525-0
     * display = "Age"
   * text = "Age"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 48 'a' "years"
 
-Instance: ObservationExampleBH
+Instance: observation-example-bh
 InstanceOf: NCDTHObservationVital
-Title: "NCD TH Observation - Body Height"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"
+Title: "Observation - Body Height"
+Description: "ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -230,15 +236,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #8302-2
     * display = "Body height"
   * text = "Body height"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 170 'cm' "cm"
 
-Instance: ObservationExampleBMI
+Instance: observation-example-bmi
 InstanceOf: NCDTHObservationVital
-Title: "NCD TH Observation - BMI"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"
+Title: "Observation - BMI"
+Description: "ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -252,15 +258,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #39156-5
     * display = "Body mass index (BMI) [Ratio]"
   * text = "Body mass index (BMI)"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 23 'kg/m2' "kg/m2"
 
-Instance: ObservationExampleBP
+Instance: observation-example-bp
 InstanceOf: NCDTHObservationVital
-Title: "NCD TH Observation - Blood Pressure (BP)"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"
+Title: "Observation - Blood Pressure (BP)"
+Description: "ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -274,8 +280,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #85354-9
     * display = "Blood pressure panel with all children optional"
   * text = "Blood pressure systolic and diastolic"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * component[0]
   * code
@@ -295,10 +301,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
   * valueQuantity = 80 'mm[Hg]' "mmHg"
 
 
-Instance: ObservationExampleBW
+Instance: observation-example-bw
 InstanceOf: NCDTHObservationVital
-Title: "NCD TH Observation - Body Weight"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"
+Title: "Observation - Body Weight"
+Description: "ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -312,15 +318,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #29463-7
     * display = "Body weight"
   * text = "Body weight"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 80 'kg' "kg"
 
-Instance: ObservationExampleWC
+Instance: observation-example-wc
 InstanceOf: NCDTHObservationVital
-Title: "NCD TH Observation - Waist Circumference"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"
+Title: "Observation - Waist Circumference"
+Description: "ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -334,15 +340,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #8280-0
     * display = "Waist Circumference at umbilicus by Tape measure"
   * text = "Waist Circumference"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 80 'cm' "cm"
 
-Instance: ObservationExampleBUN
+Instance: observation-example-bun
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - BUN"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - BUN"
+Description: "ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -356,15 +362,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320052
     * display = "Urea nitrogen [mg/dL] in Serum or Plasma"
   * text = "BUN"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 10.0 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleChol
+Instance: observation-example-chol
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - Chol"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - Cholesterol"
+Description: "ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -378,15 +384,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320070
     * display = "Cholesterol [mg/dL] in Serum or Plasma	"
   * text = "Cholesterol"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 150 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleCr
+Instance: observation-example-cr
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - Creatinine"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - Creatinine"
+Description: "ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -400,15 +406,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320055
     * display = "Creatinine [mg/dL] in Serum or Plasma"
   * text = "Creatinine"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 0.75 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleFBS
+Instance: observation-example-fbs
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - Fasting Blood Sugar (FBS)"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - Fasting Blood Sugar (FBS)"
+Description: "ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -422,15 +428,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320291
     * display = "Fasting glucose [mg/dL] in Serum or Plasma"
   * text = "FBS"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 100 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleHDL
+Instance: observation-example-hdl
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - HDL"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - HDL"
+Description: "ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -444,15 +450,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320071
     * display = "Cholesterol in HDL [mg/dL] in Serum or Plasma"
   * text = "HDL"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 40 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleLDL
+Instance: observation-example-ldl
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - LDL"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - LDL"
+Description: "ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -464,17 +470,17 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
   * coding
     * system = $TMLT
     * code = #320293
-    * display = "Cholesterol in LDL [mg/dL] in Serum or Plasma by calculation	"
+    * display = "Cholesterol in LDL [mg/dL] in Serum or Plasma by calculation"
   * text = "LDL"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 100 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleRBS
+Instance: observation-example-rbs
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - Resting Blood Sugar (RBS)"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - Resting Blood Sugar (RBS)"
+Description: "ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -488,15 +494,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320062
     * display = "Glucose [mg/dL] in Serum or Plasma"
   * text = "RBS"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 100 'mg/dL' "mg/dL"
 
-Instance: ObservationExampleTG
+Instance: observation-example-tg
 InstanceOf: NCDTHObservationLab
-Title: "NCD TH Observation - TG"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"
+Title: "Observation - TG"
+Description: "ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย"
 * status = #final
 * category
   * coding
@@ -510,15 +516,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #320072
     * display = "Triglyceride [mg/dL] in Serum or Plasma"
   * text = "Triglyceride"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 100 'mg/dL' "mg/dL"
 
-Instance: ObservationExample2Q
+Instance: observation-example2q
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - คัดกรองซึมเศร้า 2Q"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - คัดกรองซึมเศร้า 2Q"
+Description: "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม"
 * status = #final
 * category
   * coding
@@ -532,8 +538,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #2q
     * display = "แบบคัดกรองซึมเศร้า 2 คำถาม"
   * text = "แบบคัดกรองซึมเศร้า 2 คำถาม"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -542,10 +548,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Suspected depressive disorder"
   * text = "Suspected depressive disorder"
 
-Instance: ObservationExampleAF
+Instance: observation-example-af
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - AF"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - AF"
+Description: "ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)"
 * status = #final
 * category
   * coding
@@ -559,8 +565,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #312442005
     * display = "History of atrial fibrillation"
   * text = "History of atrial fibrillation"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -569,10 +575,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Negative"
   * text = "Negative for Atrial Fibrillation"
 
-Instance: ObservationExampleCVD
+Instance: observation-example-cvd
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - CVD Risk"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - CVD Risk"
+Description: "ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)"
 * status = #final
 * category
   * coding
@@ -586,15 +592,15 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #99056-4
     * display = "Cardiovascular disease 10Y risk"
   * text = "Cardiovascular disease 10Y risk"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueQuantity = 16 '%' "%"
 
-Instance: ObservationExampleDFScreening
+Instance: observation-example-df-screening
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - Diabetic Foot Screening"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - Diabetic Foot Screening"
+Description: "ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน"
 * status = #final
 * category
   * coding
@@ -608,8 +614,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #394683006
     * display = "Diabetic foot risk assessment"
   * text = "Diabetic foot risk assessment"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -618,10 +624,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Foot normal"
   * text = "Foot normal"
 
-Instance: ObservationExampleDNScreening
+Instance: observation-example-dn-screening
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - Diabetic Nephropathy Screening"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - Diabetic Nephropathy Screening"
+Description: "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)"
 * status = #final
 * category
   * coding
@@ -635,8 +641,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #46716003
     * display = "Urine microalbumin level"
   * text = "Urine microalbumin level"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -645,10 +651,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Urine microalbumin negative"
   * text = "Urine microalbumin negative"
 
-Instance: ObservationExampleDRScreening
+Instance: observation-example-dr-screening
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - Diabetic Retinopathy Screening"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - Diabetic Retinopathy Screening"
+Description: "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)"
 * status = #final
 * category
   * coding
@@ -662,8 +668,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #134395001
     * display = "Diabetic retinopathy screening"
   * text = "Diabetic retinopathy screening"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -674,10 +680,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
 
 
 
-Instance: ObservationExampleST5
+Instance: observation-example-st5
 InstanceOf: NCDTHObservationPESurvey
-Title: "NCD TH Observation - คัดกรองซึมเศร้า ST5"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey"
+Title: "Observation - คัดกรองซึมเศร้า ST5"
+Description: "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5"
 * status = #final
 * category
   * coding
@@ -691,8 +697,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #st5
     * display = "Srithanya Stress Scale"
   * text = "Srithanya Stress Scale"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -701,10 +707,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Anxiety"
   * text = "Anxiety"
 
-Instance: ObservationExampleAlcohol
+Instance: observation-example-alcohol
 InstanceOf: NCDTHObservationSocial
-Title: "NCD TH Observation - Alcohol"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"
+Title: "Observation - Alcohol"
+Description: "ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์"
 * status = #final
 * category
   * coding
@@ -718,8 +724,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #11331-6
     * display = "History of Alcohol use"
   * text = "History of Alcohol use"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -728,10 +734,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Denies alcohol use"
   * text = "Denies alcohol use"
 
-Instance: ObservationExampleDiet
+Instance: observation-example-diet
 InstanceOf: NCDTHObservationSocial
-Title: "NCD TH Observation - Diet"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"
+Title: "Observation - Diet"
+Description: "ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ"
 * status = #final
 * category
   * coding
@@ -745,8 +751,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #81663-7
     * display = "Diet [Type]"
   * text = "Diet [Type]"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -755,10 +761,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "General diet (finding)"
   * text = "General diet"
 
-Instance: ObservationExamplePhysical
+Instance: observation-example-physical
 InstanceOf: NCDTHObservationSocial
-Title: "NCD TH Observation - Physical Activity"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"
+Title: "Observation - Physical Activity"
+Description: "ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ"
 * status = #final
 * category
   * coding
@@ -772,8 +778,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #99285-9
     * display = "Current activity level"
   * text = "Current activity level"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -782,10 +788,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Gets no exercise"
   * text = "Gets no exercise"
 
-Instance: ObservationExampleSmoking
+Instance: observation-example-smoking
 InstanceOf: NCDTHObservationSocial
-Title: "NCD TH Observation - Smoking"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"
+Title: "Observation - Smoking"
+Description: "ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่"
 * status = #final
 * category
   * coding
@@ -799,8 +805,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * code = #72166-2
     * display = "Tobacco smoking status"
   * text = "Tobacco smoking status"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * effectiveDateTime = "2022-02-20T14:28:17+07:00"
 * valueCodeableConcept
   * coding
@@ -809,10 +815,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * display = "Current some day smoker"
   * text = "Current some day smoker"
 
-Instance: AllergyIntoleranceExample
+Instance: allergy-intolerance-example
 InstanceOf: NCDTHAllergyIntolerance
-Title: "NCD TH AllergyIntolerance Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม AllergyIntolerance Profile"
+Title: "AllergyIntolerance"
+Description: "ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย"
 * clinicalStatus
   * coding
     * system = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
@@ -828,7 +834,7 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * system = $SCT
     * code = #763875007
     * display = "Product containing sulfonamide (product)"
-* patient = Reference(PatientExample)
+* patient = Reference(patient-example)
 * reaction
   * manifestation
     * coding
@@ -837,10 +843,10 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
       * display = "skin rash"
   * severity = #mild
 
-Instance: MediaExample
+Instance: media-example
 InstanceOf: NCDTHMedia
-Title: "NCD TH Media Example"
-Description: "ตัวอย่าง resource instance ที่สร้างตาม Media Profile"
+Title: "Media"
+Description: "ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย"
 
 * status = #completed
 * type
@@ -853,8 +859,8 @@ Description: "ตัวอย่าง resource instance ที่สร้า�
     * system = "http://terminology.hl7.org/CodeSystem/media-modality"
     * code = #diagram
     * display = "Diagram"
-* subject = Reference(PatientExample)
-* encounter = Reference(EncounterExample)
+* subject = Reference(patient-example)
+* encounter = Reference(encounter-example)
 * createdDateTime = "2022-02-20T14:28:17+07:00"
 * operator = Reference(Practitioner) //TODO
 * content

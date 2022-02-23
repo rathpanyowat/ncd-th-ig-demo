@@ -8,9 +8,9 @@
   "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig",
   "version": "0.1.0",
   "name": "ThaiNCDIG",
-  "title": "Thai NCD Implementation Guide",
+  "title": "(ร่าง) Thai NCD Implementation Guide",
   "status": "draft",
-  "date": "2022-02-22T23:30:09+07:00",
+  "date": "2022-02-23T19:35:19+07:00",
   "publisher": "Standard and Interoperability Lab Thailand",
   "contact": [
     {
@@ -18,7 +18,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://sil-th.github.io/"
+          "value": "https://sil-th.github.io"
         }
       ]
     }
@@ -366,8 +366,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-allergy-intolerance"
         },
-        "name": "NCD TH AllergyIntolerance Profile",
-        "description": "Profile สำหรับ AllergyIntolerance resource",
+        "name": "AllergyIntolerance (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร",
         "exampleBoolean": false
       },
       {
@@ -380,8 +380,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-condition"
         },
-        "name": "NCD TH Condition Profile",
-        "description": "Profile สำหรับ Condition resource",
+        "name": "Condition (NCD TH)",
+        "description": "ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)",
         "exampleBoolean": false
       },
       {
@@ -394,8 +394,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-coverage"
         },
-        "name": "NCD TH Coverage Profile",
-        "description": "Profile สำหรับ Coverage resource",
+        "name": "Coverage (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลสิทธิ์การรักษา",
         "exampleBoolean": false
       },
       {
@@ -408,8 +408,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-diagnostic-report-lab"
         },
-        "name": "NCD TH DiagnosticReport Profile for Lab Report",
-        "description": "Profile สำหรับ DiagnosticReport resource",
+        "name": "DiagnosticReport Profile for Lab (NCD TH)",
+        "description": "ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)",
         "exampleBoolean": false
       },
       {
@@ -422,8 +422,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-encounter"
         },
-        "name": "NCD TH Encounter Profile",
-        "description": "Profile สำหรับ Encounter resource",
+        "name": "Encounter (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลการรับบริการสุขภาพ",
         "exampleBoolean": false
       },
       {
@@ -436,8 +436,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-episode-of-care"
         },
-        "name": "NCD TH EpisodeOfCare Profile",
-        "description": "Profile สำหรับ EpisodeOfCare resource",
+        "name": "EpisodeOfCare (NCD TH)",
+        "description": "ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน",
         "exampleBoolean": false
       },
       {
@@ -450,8 +450,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-family-member-history"
         },
-        "name": "NCD TH FamilyMemberHistory Profile",
-        "description": "Profile สำหรับ FamilyMemberHistory resource",
+        "name": "FamilyMemberHistory (NCD TH)",
+        "description": "ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว",
         "exampleBoolean": false
       },
       {
@@ -464,8 +464,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-media"
         },
-        "name": "NCD TH Media Profile",
-        "description": "Profile สำหรับ Media resource",
+        "name": "Media (NCD TH)",
+        "description": "ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว",
         "exampleBoolean": false
       },
       {
@@ -478,8 +478,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-observation-lab"
         },
-        "name": "NCD TH Observation Profile - Lab",
-        "description": "Profile สำหรับ Observation resource - Lab",
+        "name": "Observation Profile - Lab (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว",
         "exampleBoolean": false
       },
       {
@@ -492,8 +492,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-observation-pe-survey"
         },
-        "name": "NCD TH Observation Profile - PE & Survey",
-        "description": "Profile สำหรับ Observation resource - PE & Survey",
+        "name": "Observation Profile - PE & Survey (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ",
         "exampleBoolean": false
       },
       {
@@ -506,8 +506,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-observation-social"
         },
-        "name": "NCD TH Observation Profile - Social History",
-        "description": "Profile สำหรับ Observation resource - Social History",
+        "name": "Observation Profile - Social (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย",
         "exampleBoolean": false
       },
       {
@@ -520,8 +520,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-observation-vital"
         },
-        "name": "NCD TH Observation Profile - Vital Signs",
-        "description": "Profile สำหรับ Observation resource - Vital Signs",
+        "name": "Observation Profile - Vital Signs (NCD TH)",
+        "description": "ใช้บันทึกข้อมูล vital signs",
         "exampleBoolean": false
       },
       {
@@ -534,8 +534,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-organization"
         },
-        "name": "NCD TH Organization Profile",
-        "description": "Profile สำหรับ Organization resource",
+        "name": "Organization (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลหน่วยงาน/องค์กร",
         "exampleBoolean": false
       },
       {
@@ -548,8 +548,8 @@
         "reference": {
           "reference": "StructureDefinition/ncdth-patient"
         },
-        "name": "NCD TH Patient Profile",
-        "description": "Profile สำหรับ Patient resource",
+        "name": "Patient (NCD TH)",
+        "description": "ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น",
         "exampleBoolean": false
       },
       {
@@ -616,10 +616,10 @@
           }
         ],
         "reference": {
-          "reference": "AllergyIntolerance/AllergyIntoleranceExample"
+          "reference": "AllergyIntolerance/allergy-intolerance-example"
         },
-        "name": "NCD TH AllergyIntolerance Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม AllergyIntolerance Profile",
+        "name": "AllergyIntolerance",
+        "description": "ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance"
       },
       {
@@ -630,10 +630,10 @@
           }
         ],
         "reference": {
-          "reference": "Condition/ConditionExample1"
+          "reference": "Condition/condition-example1"
         },
-        "name": "NCD TH Condition Example 1 - Hypertension",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Condition Profile",
+        "name": "Condition 1 - Hypertension",
+        "description": "ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"
       },
       {
@@ -644,10 +644,10 @@
           }
         ],
         "reference": {
-          "reference": "Condition/ConditionExample2"
+          "reference": "Condition/condition-example2"
         },
-        "name": "NCD TH Condition Example 2 - Diabetes Mellitus",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Condition Profile",
+        "name": "Condition 2 - Diabetes Mellitus",
+        "description": "ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"
       },
       {
@@ -658,10 +658,10 @@
           }
         ],
         "reference": {
-          "reference": "Coverage/CoverageExample"
+          "reference": "Coverage/coverage-example"
         },
-        "name": "NCD TH Coverage Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Coverage Profile",
+        "name": "Coverage",
+        "description": "ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage"
       },
       {
@@ -672,10 +672,10 @@
           }
         ],
         "reference": {
-          "reference": "DiagnosticReport/DiagnosticReportLabExample1"
+          "reference": "DiagnosticReport/diagnostic-report-lab-example1"
         },
-        "name": "NCD TH DiagnosticReport for Lab Report Example - Lipid Profile",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Lipid Profile",
+        "name": "DiagnosticReport - Lab Lipid Profile",
+        "description": "ตัวอย่างการรายงานผล Lipid Profile",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"
       },
       {
@@ -686,10 +686,10 @@
           }
         ],
         "reference": {
-          "reference": "DiagnosticReport/DiagnosticReportLabExample2"
+          "reference": "DiagnosticReport/diagnostic-report-lab-example2"
         },
-        "name": "NCD TH DiagnosticReport for Lab Report Example - Metabolic Profile",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Metabolic Profile",
+        "name": "DiagnosticReport - Lab Metabolic Profile",
+        "description": "ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"
       },
       {
@@ -700,10 +700,10 @@
           }
         ],
         "reference": {
-          "reference": "Encounter/EncounterExample"
+          "reference": "Encounter/encounter-example"
         },
-        "name": "NCD TH Encounter Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Encounter Profile",
+        "name": "Encounter",
+        "description": "ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter"
       },
       {
@@ -714,10 +714,10 @@
           }
         ],
         "reference": {
-          "reference": "EpisodeOfCare/EpisodeOfCareExample"
+          "reference": "EpisodeOfCare/episode-of-care-example"
         },
-        "name": "NCD TH EpisodeOfCare Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม EpisodeOfCare Profile",
+        "name": "EpisodeOfCare",
+        "description": "ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care"
       },
       {
@@ -728,10 +728,10 @@
           }
         ],
         "reference": {
-          "reference": "FamilyMemberHistory/FamilyMemberHistoryExample"
+          "reference": "FamilyMemberHistory/family-member-history-example"
         },
-        "name": "NCD TH FamilyMemberHistory Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม FamilyMemberHistory Profile",
+        "name": "FamilyMemberHistory",
+        "description": "ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history"
       },
       {
@@ -742,10 +742,10 @@
           }
         ],
         "reference": {
-          "reference": "Media/MediaExample"
+          "reference": "Media/media-example"
         },
-        "name": "NCD TH Media Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Media Profile",
+        "name": "Media",
+        "description": "ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media"
       },
       {
@@ -756,10 +756,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExample2Q"
+          "reference": "Observation/observation-example-af"
         },
-        "name": "NCD TH Observation - คัดกรองซึมเศร้า 2Q",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
+        "name": "Observation - AF",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
       },
       {
@@ -770,24 +770,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleAF"
+          "reference": "Observation/observation-example-age"
         },
-        "name": "NCD TH Observation - AF",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleAge"
-        },
-        "name": "NCD TH Observation - Age",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs",
+        "name": "Observation - Age",
+        "description": "ตัวอย่างข้อมูลอายุของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
       },
       {
@@ -798,10 +784,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleAlcohol"
+          "reference": "Observation/observation-example-alcohol"
         },
-        "name": "NCD TH Observation - Alcohol",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social",
+        "name": "Observation - Alcohol",
+        "description": "ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
       },
       {
@@ -812,10 +798,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleBH"
+          "reference": "Observation/observation-example-bh"
         },
-        "name": "NCD TH Observation - Body Height",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs",
+        "name": "Observation - Body Height",
+        "description": "ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
       },
       {
@@ -826,10 +812,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleBMI"
+          "reference": "Observation/observation-example-bmi"
         },
-        "name": "NCD TH Observation - BMI",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs",
+        "name": "Observation - BMI",
+        "description": "ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
       },
       {
@@ -840,10 +826,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleBP"
+          "reference": "Observation/observation-example-bp"
         },
-        "name": "NCD TH Observation - Blood Pressure (BP)",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs",
+        "name": "Observation - Blood Pressure (BP)",
+        "description": "ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
       },
       {
@@ -854,10 +840,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleBUN"
+          "reference": "Observation/observation-example-bun"
         },
-        "name": "NCD TH Observation - BUN",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
+        "name": "Observation - BUN",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
       },
       {
@@ -868,10 +854,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleBW"
+          "reference": "Observation/observation-example-bw"
         },
-        "name": "NCD TH Observation - Body Weight",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs",
+        "name": "Observation - Body Weight",
+        "description": "ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
       },
       {
@@ -882,24 +868,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleCVD"
+          "reference": "Observation/observation-example-chol"
         },
-        "name": "NCD TH Observation - CVD Risk",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleChol"
-        },
-        "name": "NCD TH Observation - Chol",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
+        "name": "Observation - Cholesterol",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
       },
       {
@@ -910,10 +882,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleCr"
+          "reference": "Observation/observation-example-cr"
         },
-        "name": "NCD TH Observation - Creatinine",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
+        "name": "Observation - Creatinine",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
       },
       {
@@ -924,10 +896,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleDFScreening"
+          "reference": "Observation/observation-example-cvd"
         },
-        "name": "NCD TH Observation - Diabetic Foot Screening",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
+        "name": "Observation - CVD Risk",
+        "description": "ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
       },
       {
@@ -938,10 +910,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleDNScreening"
+          "reference": "Observation/observation-example-df-screening"
         },
-        "name": "NCD TH Observation - Diabetic Nephropathy Screening",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
+        "name": "Observation - Diabetic Foot Screening",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
       },
       {
@@ -952,24 +924,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleDRScreening"
+          "reference": "Observation/observation-example-diet"
         },
-        "name": "NCD TH Observation - Diabetic Retinopathy Screening",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleDiet"
-        },
-        "name": "NCD TH Observation - Diet",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social",
+        "name": "Observation - Diet",
+        "description": "ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
       },
       {
@@ -980,80 +938,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleFBS"
+          "reference": "Observation/observation-example-dn-screening"
         },
-        "name": "NCD TH Observation - Fasting Blood Sugar (FBS)",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleHDL"
-        },
-        "name": "NCD TH Observation - HDL",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleLDL"
-        },
-        "name": "NCD TH Observation - LDL",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExamplePhysical"
-        },
-        "name": "NCD TH Observation - Physical Activity",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleRBS"
-        },
-        "name": "NCD TH Observation - Resting Blood Sugar (RBS)",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ObservationExampleST5"
-        },
-        "name": "NCD TH Observation - คัดกรองซึมเศร้า ST5",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey",
+        "name": "Observation - Diabetic Nephropathy Screening",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
       },
       {
@@ -1064,11 +952,11 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleSmoking"
+          "reference": "Observation/observation-example-dr-screening"
         },
-        "name": "NCD TH Observation - Smoking",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social",
-        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+        "name": "Observation - Diabetic Retinopathy Screening",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
       },
       {
         "extension": [
@@ -1078,10 +966,10 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleTG"
+          "reference": "Observation/observation-example-fbs"
         },
-        "name": "NCD TH Observation - TG",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory",
+        "name": "Observation - Fasting Blood Sugar (FBS)",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
       },
       {
@@ -1092,11 +980,123 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExampleWC"
+          "reference": "Observation/observation-example-hdl"
         },
-        "name": "NCD TH Observation - Waist Circumference",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs",
+        "name": "Observation - HDL",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-ldl"
+        },
+        "name": "Observation - LDL",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-physical"
+        },
+        "name": "Observation - Physical Activity",
+        "description": "ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-rbs"
+        },
+        "name": "Observation - Resting Blood Sugar (RBS)",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-smoking"
+        },
+        "name": "Observation - Smoking",
+        "description": "ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-st5"
+        },
+        "name": "Observation - คัดกรองซึมเศร้า ST5",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-tg"
+        },
+        "name": "Observation - TG",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-wc"
+        },
+        "name": "Observation - Waist Circumference",
+        "description": "ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example2q"
+        },
+        "name": "Observation - คัดกรองซึมเศร้า 2Q",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
       },
       {
         "extension": [
@@ -1106,10 +1106,10 @@
           }
         ],
         "reference": {
-          "reference": "Organization/OrganizationExample"
+          "reference": "Organization/organization-example"
         },
-        "name": "NCD TH Organization Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม Organization Profile",
+        "name": "Organization",
+        "description": "ตัวอย่างข้อมูลโรงพยาบาล",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization"
       },
       {
@@ -1120,10 +1120,10 @@
           }
         ],
         "reference": {
-          "reference": "Patient/PatientExample"
+          "reference": "Patient/patient-example"
         },
-        "name": "NCD TH Patient Example",
-        "description": "ตัวอย่าง resource instance ที่สร้างตาม NCD Thailand Patient Profile",
+        "name": "Patient",
+        "description": "ตัวอย่างข้อมูลคนไข้",
         "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient"
       }
     ],

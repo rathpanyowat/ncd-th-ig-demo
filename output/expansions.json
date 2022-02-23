@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "f42e4ad1-a418-41a8-8f52-2e223169a148",
+  "id" : "b77c1e1f-dd29-4ce2-95ba-23ab371c2954",
   "meta" : {
-    "lastUpdated" : "2022-02-22T23:30:09.499+07:00"
+    "lastUpdated" : "2022-02-23T19:35:19.158+07:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,13 +19,13 @@
       "name" : "NCDTHVitalVS",
       "title" : "NCD TH Vital Signs Value Set",
       "status" : "active",
-      "date" : "2022-02-22T23:30:09+07:00",
+      "date" : "2022-02-23T19:35:19+07:00",
       "publisher" : "Standard and Interoperability Lab Thailand",
       "contact" : [{
         "name" : "Standard and Interoperability Lab Thailand",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://sil-th.github.io/"
+          "value" : "https://sil-th.github.io"
         }]
       }],
       "description" : "รหัสจากระบบ LOINC ในการบันทึกชนิดการตรวจ vital signs",
@@ -37,8 +37,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bddf8003-8642-408c-9531-0b26da865d9c",
-        "timestamp" : "2022-02-22T23:30:20+07:00",
+        "identifier" : "urn:uuid:e2944fc3-2d2a-43db-b86f-200044eba2aa",
+        "timestamp" : "2022-02-23T19:35:30+07:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -169,13 +169,13 @@
       "name" : "THGovernmentCoverageTypeVS",
       "title" : "Thai Government Coverage Type Value Set",
       "status" : "active",
-      "date" : "2022-02-22T23:30:09+07:00",
+      "date" : "2022-02-23T19:35:19+07:00",
       "publisher" : "Standard and Interoperability Lab Thailand",
       "contact" : [{
         "name" : "Standard and Interoperability Lab Thailand",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://sil-th.github.io/"
+          "value" : "https://sil-th.github.io"
         }]
       }],
       "description" : "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด",
@@ -187,8 +187,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ef1206df-61b5-4881-90ac-d68445437e15",
-        "timestamp" : "2022-02-22T23:30:25+07:00",
+        "identifier" : "urn:uuid:18e4de7a-0690-4fe3-b636-0ad5e8b48990",
+        "timestamp" : "2022-02-23T19:35:37+07:00",
         "total" : 61,
         "parameter" : [{
           "name" : "excludeNested",

@@ -9,8 +9,8 @@ Alias: $vitalsignsProfile = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Profile: NCDTHPatient
 Parent: Patient
 Id: ncdth-patient
-Title: "NCD TH Patient Profile"
-Description: "Profile สำหรับ Patient resource"
+Title: "Patient (NCD TH)"
+Description: "ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น"
 * identifier 1..* MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -35,8 +35,8 @@ Description: "Profile สำหรับ Patient resource"
 Profile: NCDTHOrganization
 Parent: Organization
 Id: ncdth-organization
-Title: "NCD TH Organization Profile"
-Description: "Profile สำหรับ Organization resource"
+Title: "Organization (NCD TH)"
+Description: "ใช้บันทึกข้อมูลหน่วยงาน/องค์กร"
 * identifier MS
 * name 1..1 MS
 * address MS
@@ -45,8 +45,8 @@ Description: "Profile สำหรับ Organization resource"
 Profile: NCDTHCoverage
 Parent: Coverage
 Id: ncdth-coverage
-Title: "NCD TH Coverage Profile"
-Description: "Profile สำหรับ Coverage resource"
+Title: "Coverage (NCD TH)"
+Description: "ใช้บันทึกข้อมูลสิทธิ์การรักษา"
 * identifier MS
 * status MS
 * type MS
@@ -58,8 +58,8 @@ Description: "Profile สำหรับ Coverage resource"
 Profile: NCDTHEpisodeOfCare
 Parent: EpisodeOfCare
 Id: ncdth-episode-of-care
-Title: "NCD TH EpisodeOfCare Profile"
-Description: "Profile สำหรับ EpisodeOfCare resource"
+Title: "EpisodeOfCare (NCD TH)"
+Description: "ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน"
 * identifier MS
   * system MS
   * value MS
@@ -74,8 +74,8 @@ Description: "Profile สำหรับ EpisodeOfCare resource"
 Profile: NCDTHEncounter
 Parent: Encounter
 Id: ncdth-encounter
-Title: "NCD TH Encounter Profile"
-Description: "Profile สำหรับ Encounter resource"
+Title: "Encounter (NCD TH)"
+Description: "ใช้บันทึกข้อมูลการรับบริการสุขภาพ"
 * identifier 1..* MS
   * system 1..1 MS
   * value 1..1 MS
@@ -92,8 +92,8 @@ Description: "Profile สำหรับ Encounter resource"
 Profile: NCDTHFamilyMemberHistory
 Parent: FamilyMemberHistory
 Id: ncdth-family-member-history
-Title: "NCD TH FamilyMemberHistory Profile"
-Description: "Profile สำหรับ FamilyMemberHistory resource"
+Title: "FamilyMemberHistory (NCD TH)"
+Description: "ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว"
 
 * status MS
 * patient MS
@@ -107,8 +107,8 @@ Description: "Profile สำหรับ FamilyMemberHistory resource"
 Profile: NCDTHCondition
 Parent: Condition
 Id: ncdth-condition
-Title: "NCD TH Condition Profile"
-Description: "Profile สำหรับ Condition resource"
+Title: "Condition (NCD TH)"
+Description: "ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)"
 
 * clinicalStatus MS
 * verificationStatus MS
@@ -121,8 +121,8 @@ Description: "Profile สำหรับ Condition resource"
 Profile: NCDTHDiagnosticReportLab
 Parent: DiagnosticReport
 Id: ncdth-diagnostic-report-lab
-Title: "NCD TH DiagnosticReport Profile for Lab Report"
-Description: "Profile สำหรับ DiagnosticReport resource"
+Title: "DiagnosticReport Profile for Lab (NCD TH)"
+Description: "ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)"
 
 * status MS
 * status = #final (exactly)
@@ -149,8 +149,8 @@ Profile: NCDTHObservationVital
 // Parent: $vitalsignsProfile
 Parent: Observation
 Id: ncdth-observation-vital
-Title: "NCD TH Observation Profile - Vital Signs"
-Description: "Profile สำหรับ Observation resource - Vital Signs"
+Title: "Observation Profile - Vital Signs (NCD TH)"
+Description: "ใช้บันทึกข้อมูล vital signs"
 
 * status MS
 * category ..* MS
@@ -160,25 +160,13 @@ Description: "Profile สำหรับ Observation resource - Vital Signs"
 * category ^slicing.discriminator[=].path = "coding.system"
 * category ^slicing.rules = #open
 * category contains VSCat 1..1 MS
-* category[VSCat].coding 1..* MS
-* category[VSCat].coding.system 1..1 MS
-* category[VSCat].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
-* category[VSCat].coding.code 1..1 MS
-* category[VSCat].coding.code = #vital-signs (exactly)
-* code MS
-* code from NCDTHVitalVS (extensible)
-* code ^binding.description = "รหัสสำหรับการวัด vital sign จาก LOINC"
-* subject only Reference(Patient)
-* subject MS
-* encounter MS
-* effective[x] only dateTime or Period
-* effective[x] MS
-* value[x] MS
+* insert SetObservationCat(VSCat, #vital-signs)
+* insert SetObservationCodeBinding(NCDTHVitalVS, "รหัสสำหรับการวัด vital sign จาก LOINC")
+* insert SetStandardObservationElements
 * value[x] from http://hl7.org/fhir/ValueSet/ucum-vitals-common (extensible)
 * value[x] ^short = "ค่าที่วัดได้ของ vital signs"
 * value[x] ^definition = "ปกติมักใช้ data type เป็น Quantity"
 * value[x] ^binding.description = "หน่วยวัดในระบบ UCUM ที่ใช้บ่อยในการบันทึกค่า vital signs"
-* dataAbsentReason MS
 * component MS
 * component ^short = "Component ย่อยของ observations"
 * component ^definition = "ใช้สำหรับ observation ที่มี component ย่อย เช่น systolic และ diastolic blood pressure"
@@ -193,11 +181,40 @@ Description: "Profile สำหรับ Observation resource - Vital Signs"
 * component.value[x] ^binding.description = "หน่วยวัดในระบบ UCUM ที่ใช้บ่อยในการบันทึกค่า vital signs"
 * component.dataAbsentReason MS
 
+RuleSet: SetObservationCat(SliceName, code)
+* category[{SliceName}].coding 1..* MS
+* category[{SliceName}].coding.system 1..1 MS
+* category[{SliceName}].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category[{SliceName}].coding.code 1..1 MS
+* category[{SliceName}].coding.code = {code} (exactly)
+
+RuleSet: SetObservationCodeBinding(valueSet, description)
+* code MS
+* code from {valueSet} (extensible)
+* code ^binding.description = {description}
+
+RuleSet: SetStandardObservationElements
+* subject only Reference(Patient)
+* subject MS
+* encounter MS
+* effective[x] only dateTime or Period
+* effective[x] MS
+* value[x] MS
+* value[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* value[x] ^type[=].extension.valueBoolean = true
+* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* value[x] ^type[=].extension.valueBoolean = true
+* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* value[x] ^type[=].extension.valueBoolean = true
+* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* value[x] ^type[=].extension.valueBoolean = true
+* dataAbsentReason MS
+
 Profile: NCDTHObservationLab
 Parent: Observation
 Id: ncdth-observation-lab
-Title: "NCD TH Observation Profile - Lab"
-Description: "Profile สำหรับ Observation resource - Lab"
+Title: "Observation Profile - Lab (NCD TH)"
+Description: "ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว"
 
 * status MS
 * category ..* MS
@@ -205,35 +222,15 @@ Description: "Profile สำหรับ Observation resource - Lab"
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains Laboratory 1..1 MS
-* category[Laboratory].coding 1..* MS
-* category[Laboratory].coding.system 1..1 MS
-* category[Laboratory].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
-* category[Laboratory].coding.code 1..1 MS
-* category[Laboratory].coding.code = #laboratory (exactly)
-* code MS
-* code from NCDTHLaboratoryVS (extensible)
-* code ^binding.description = "รหัสมาตรฐานการตรวจทางห้องปฏิบัติการ TMLT"
-* subject only Reference(Patient)
-* subject MS
-* encounter MS
-* effective[x] only dateTime or Period
-* effective[x] MS
-* value[x] MS
-* value[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* dataAbsentReason MS
+* insert SetObservationCat(Laboratory, #laboratory)
+* insert SetObservationCodeBinding(NCDTHLaboratoryVS, "รหัสมาตรฐานการตรวจทางห้องปฏิบัติการ TMLT")
+* insert SetStandardObservationElements
 
 Profile: NCDTHObservationPESurvey
 Parent: Observation
 Id: ncdth-observation-pe-survey
-Title: "NCD TH Observation Profile - PE & Survey"
-Description: "Profile สำหรับ Observation resource - PE & Survey"
+Title: "Observation Profile - PE & Survey (NCD TH)"
+Description: "ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ"
 
 * status MS
 * category ..* MS
@@ -241,76 +238,32 @@ Description: "Profile สำหรับ Observation resource - PE & Survey"
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains Exam 0..1 MS and Survey 0..1 MS
-* category[Exam].coding 1..* MS
-* category[Exam].coding.system 1..1 MS
-* category[Exam].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
-* category[Exam].coding.code 1..1 MS
-* category[Exam].coding.code = #exam (exactly)
-* category[Survey].coding 1..* MS
-* category[Survey].coding.system 1..1 MS
-* category[Survey].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
-* category[Survey].coding.code 1..1 MS
-* category[Survey].coding.code = #survey (exactly)
-* code MS
-* code from $LNC (extensible)
-* code ^binding.description = "รหัสมาตรฐาน LOINC บอกชนิดการตรวจ ถ้าไม่มีใช้ code system อื่นได้ เช่น SNOMED-CT"
-* subject only Reference(Patient)
-* subject MS
-* encounter MS
-* effective[x] only dateTime or Period
-* effective[x] MS
-* value[x] MS
-* value[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* dataAbsentReason MS
+* insert SetObservationCat(Exam, #exam)
+* insert SetObservationCat(Survey, #survey)
+* insert SetObservationCodeBinding($LNC, "รหัสมาตรฐาน LOINC บอกชนิดการตรวจ ถ้าไม่มีใช้ code system อื่นได้ เช่น SNOMED-CT")
+* insert SetStandardObservationElements
 
 Profile: NCDTHObservationSocial
 Parent: Observation
 Id: ncdth-observation-social
-Title: "NCD TH Observation Profile - Social History"
-Description: "Profile สำหรับ Observation resource - Social History"
+Title: "Observation Profile - Social (NCD TH)"
+Description: "ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย"
 * status MS
 * category ..* MS
 * category ^slicing.discriminator[0].type = #pattern
 * category ^slicing.discriminator[=].path = "$this"
 * category ^slicing.rules = #open
 * category contains Social 1..1 MS
-* category[Social].coding 1..* MS
-* category[Social].coding.system 1..1 MS
-* category[Social].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
-* category[Social].coding.code 1..1 MS
-* category[Social].coding.code = #social (exactly)
-* code MS
-* code from $LNC (extensible)
-* code ^binding.description = "รหัสมาตรฐาน LOINC บอกชนิดการตรวจ"
-* subject only Reference(Patient)
-* subject MS
-* encounter MS
-* effective[x] only dateTime or Period
-* effective[x] MS
-* value[x] MS
-* value[x] ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* value[x] ^type[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* value[x] ^type[=].extension.valueBoolean = true
-* dataAbsentReason MS
+* insert SetObservationCat(Social, #social)
+* insert SetObservationCodeBinding($LNC, "รหัสมาตรฐาน LOINC บอกชนิดการตรวจ")
+* insert SetStandardObservationElements
 
 
 Profile: NCDTHAllergyIntolerance
 Parent: AllergyIntolerance
 Id: ncdth-allergy-intolerance
-Title: "NCD TH AllergyIntolerance Profile"
-Description: "Profile สำหรับ AllergyIntolerance resource"
+Title: "AllergyIntolerance (NCD TH)"
+Description: "ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร"
 * clinicalStatus MS
 * verificationStatus MS
 * category MS
@@ -325,8 +278,8 @@ Description: "Profile สำหรับ AllergyIntolerance resource"
 Profile: NCDTHMedia
 Parent: Media
 Id: ncdth-media
-Title: "NCD TH Media Profile"
-Description: "Profile สำหรับ Media resource"
+Title: "Media (NCD TH)"
+Description: "ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว"
 
 * type MS
 * modality MS

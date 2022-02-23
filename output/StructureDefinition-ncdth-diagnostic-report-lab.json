@@ -18,9 +18,9 @@
   "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab",
   "version": "0.1.0",
   "name": "NCDTHDiagnosticReportLab",
-  "title": "NCD TH DiagnosticReport Profile for Lab Report",
+  "title": "DiagnosticReport Profile for Lab (NCD TH)",
   "status": "active",
-  "date": "2022-02-22T23:30:09+07:00",
+  "date": "2022-02-23T19:35:19+07:00",
   "publisher": "Standard and Interoperability Lab Thailand",
   "contact": [
     {
@@ -28,12 +28,12 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://sil-th.github.io/"
+          "value": "https://sil-th.github.io"
         }
       ]
     }
   ],
-  "description": "Profile สำหรับ DiagnosticReport resource",
+  "description": "ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)",
   "jurisdiction": [
     {
       "coding": [

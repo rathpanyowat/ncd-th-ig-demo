@@ -15,9 +15,9 @@
   fhir:ImplementationGuide.url [ fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "ThaiNCDIG"];
-  fhir:ImplementationGuide.title [ fhir:value "Thai NCD Implementation Guide"];
+  fhir:ImplementationGuide.title [ fhir:value "(ร่าง) Thai NCD Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-02-22T23:30:09+07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-02-23T19:35:19+07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io/" ]
+       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io" ]
      ]
   ];
   fhir:ImplementationGuide.description [ fhir:value "Implementation Guide สำหรับการแลกเปลี่ยนข้อมูลผู้ป่วย NCD"];
@@ -345,8 +345,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-allergy-intolerance" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH AllergyIntolerance Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ AllergyIntolerance resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AllergyIntolerance (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -359,8 +359,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-condition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Condition Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Condition resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -373,8 +373,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-coverage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Coverage Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Coverage resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลสิทธิ์การรักษา" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -387,8 +387,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-diagnostic-report-lab" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH DiagnosticReport Profile for Lab Report" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ DiagnosticReport resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport Profile for Lab (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -401,8 +401,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-encounter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Encounter Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Encounter resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลการรับบริการสุขภาพ" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -415,8 +415,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-episode-of-care" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH EpisodeOfCare Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ EpisodeOfCare resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EpisodeOfCare (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -429,8 +429,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-family-member-history" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH FamilyMemberHistory Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ FamilyMemberHistory resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FamilyMemberHistory (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -443,8 +443,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-media" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Media Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Media resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Media (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -457,8 +457,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-observation-lab" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation Profile - Lab" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Observation resource - Lab" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Profile - Lab (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
@@ -471,8 +471,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-observation-pe-survey" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation Profile - PE & Survey" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Observation resource - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Profile - PE & Survey (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
@@ -485,8 +485,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-observation-social" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation Profile - Social History" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Observation resource - Social History" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Profile - Social (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
@@ -499,8 +499,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-observation-vital" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation Profile - Vital Signs" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Observation resource - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Profile - Vital Signs (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูล vital signs" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;
@@ -513,8 +513,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-organization" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Organization Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Organization resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูลหน่วยงาน/องค์กร" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -527,8 +527,8 @@
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncdth-patient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Patient Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile สำหรับ Patient resource" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (NCD TH)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -594,11 +594,11 @@
          fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/AllergyIntolerance/AllergyIntoleranceExample>;
-         fhir:Reference.reference [ fhir:value "AllergyIntolerance/AllergyIntoleranceExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/AllergyIntolerance/allergy-intolerance-example>;
+         fhir:Reference.reference [ fhir:value "AllergyIntolerance/allergy-intolerance-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH AllergyIntolerance Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม AllergyIntolerance Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AllergyIntolerance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance>
@@ -611,11 +611,11 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Condition/ConditionExample1>;
-         fhir:Reference.reference [ fhir:value "Condition/ConditionExample1" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Condition/condition-example1>;
+         fhir:Reference.reference [ fhir:value "Condition/condition-example1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Condition Example 1 - Hypertension" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Condition Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition 1 - Hypertension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition>
@@ -628,11 +628,11 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Condition/ConditionExample2>;
-         fhir:Reference.reference [ fhir:value "Condition/ConditionExample2" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Condition/condition-example2>;
+         fhir:Reference.reference [ fhir:value "Condition/condition-example2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Condition Example 2 - Diabetes Mellitus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Condition Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition 2 - Diabetes Mellitus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition>
@@ -645,11 +645,11 @@
          fhir:Extension.valueString [ fhir:value "Coverage" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Coverage/CoverageExample>;
-         fhir:Reference.reference [ fhir:value "Coverage/CoverageExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Coverage/coverage-example>;
+         fhir:Reference.reference [ fhir:value "Coverage/coverage-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Coverage Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Coverage Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage>
@@ -662,11 +662,11 @@
          fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/DiagnosticReport/DiagnosticReportLabExample1>;
-         fhir:Reference.reference [ fhir:value "DiagnosticReport/DiagnosticReportLabExample1" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/DiagnosticReport/diagnostic-report-lab-example1>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnostic-report-lab-example1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH DiagnosticReport for Lab Report Example - Lipid Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Lipid Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport - Lab Lipid Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างการรายงานผล Lipid Profile" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab>
@@ -679,11 +679,11 @@
          fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/DiagnosticReport/DiagnosticReportLabExample2>;
-         fhir:Reference.reference [ fhir:value "DiagnosticReport/DiagnosticReportLabExample2" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/DiagnosticReport/diagnostic-report-lab-example2>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnostic-report-lab-example2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH DiagnosticReport for Lab Report Example - Metabolic Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Metabolic Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport - Lab Metabolic Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab>
@@ -696,11 +696,11 @@
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Encounter/EncounterExample>;
-         fhir:Reference.reference [ fhir:value "Encounter/EncounterExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Encounter/encounter-example>;
+         fhir:Reference.reference [ fhir:value "Encounter/encounter-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Encounter Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Encounter Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter>
@@ -713,11 +713,11 @@
          fhir:Extension.valueString [ fhir:value "EpisodeOfCare" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/EpisodeOfCare/EpisodeOfCareExample>;
-         fhir:Reference.reference [ fhir:value "EpisodeOfCare/EpisodeOfCareExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/EpisodeOfCare/episode-of-care-example>;
+         fhir:Reference.reference [ fhir:value "EpisodeOfCare/episode-of-care-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH EpisodeOfCare Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม EpisodeOfCare Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EpisodeOfCare" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care>
@@ -730,11 +730,11 @@
          fhir:Extension.valueString [ fhir:value "FamilyMemberHistory" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/FamilyMemberHistory/FamilyMemberHistoryExample>;
-         fhir:Reference.reference [ fhir:value "FamilyMemberHistory/FamilyMemberHistoryExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/FamilyMemberHistory/family-member-history-example>;
+         fhir:Reference.reference [ fhir:value "FamilyMemberHistory/family-member-history-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH FamilyMemberHistory Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม FamilyMemberHistory Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FamilyMemberHistory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history>
@@ -747,11 +747,11 @@
          fhir:Extension.valueString [ fhir:value "Media" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Media/MediaExample>;
-         fhir:Reference.reference [ fhir:value "Media/MediaExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Media/media-example>;
+         fhir:Reference.reference [ fhir:value "Media/media-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Media Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Media Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Media" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media>
@@ -764,11 +764,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExample2Q>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExample2Q" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-af>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-af" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - คัดกรองซึมเศร้า 2Q" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - AF" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
@@ -781,14 +781,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleAF>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleAF" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-age>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-age" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - AF" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Age" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลอายุของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
        ]
      ], [
        fhir:index 30;
@@ -798,14 +798,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleAge>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleAge" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-alcohol>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-alcohol" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Age" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Alcohol" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
        ]
      ], [
        fhir:index 31;
@@ -815,14 +815,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleAlcohol>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleAlcohol" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-bh>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-bh" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Alcohol" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Body Height" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
        ]
      ], [
        fhir:index 32;
@@ -832,11 +832,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleBH>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleBH" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-bmi>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-bmi" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Body Height" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - BMI" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
@@ -849,11 +849,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleBMI>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleBMI" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-bp>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-bp" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - BMI" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Blood Pressure (BP)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
@@ -866,14 +866,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleBP>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleBP" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-bun>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-bun" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Blood Pressure (BP)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - BUN" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
        ]
      ], [
        fhir:index 35;
@@ -883,14 +883,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleBUN>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleBUN" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-bw>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-bw" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - BUN" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Body Weight" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
        ]
      ], [
        fhir:index 36;
@@ -900,14 +900,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleBW>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleBW" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-chol>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-chol" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Body Weight" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Cholesterol" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
        ]
      ], [
        fhir:index 37;
@@ -917,14 +917,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleCVD>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleCVD" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-cr>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-cr" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - CVD Risk" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Creatinine" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
        ]
      ], [
        fhir:index 38;
@@ -934,14 +934,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleChol>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleChol" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-cvd>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-cvd" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Chol" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - CVD Risk" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
        ]
      ], [
        fhir:index 39;
@@ -951,14 +951,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleCr>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleCr" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-df-screening>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-df-screening" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Creatinine" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Diabetic Foot Screening" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
        ]
      ], [
        fhir:index 40;
@@ -968,14 +968,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleDFScreening>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleDFScreening" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-diet>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-diet" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Diabetic Foot Screening" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Diet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
        ]
      ], [
        fhir:index 41;
@@ -985,11 +985,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleDNScreening>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleDNScreening" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-dn-screening>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-dn-screening" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Diabetic Nephropathy Screening" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Diabetic Nephropathy Screening" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
@@ -1002,11 +1002,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleDRScreening>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleDRScreening" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-dr-screening>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-dr-screening" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Diabetic Retinopathy Screening" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Diabetic Retinopathy Screening" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
@@ -1019,14 +1019,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleDiet>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleDiet" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-fbs>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-fbs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Diet" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Fasting Blood Sugar (FBS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
        ]
      ], [
        fhir:index 44;
@@ -1036,11 +1036,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleFBS>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleFBS" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-hdl>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-hdl" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Fasting Blood Sugar (FBS)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - HDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
@@ -1053,11 +1053,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleHDL>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleHDL" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-ldl>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-ldl" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - HDL" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - LDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
@@ -1070,14 +1070,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleLDL>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleLDL" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-physical>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-physical" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - LDL" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Physical Activity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
        ]
      ], [
        fhir:index 47;
@@ -1087,14 +1087,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExamplePhysical>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExamplePhysical" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-rbs>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-rbs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Physical Activity" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Resting Blood Sugar (RBS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
        ]
      ], [
        fhir:index 48;
@@ -1104,14 +1104,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleRBS>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleRBS" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-smoking>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-smoking" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Resting Blood Sugar (RBS)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Smoking" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
        ]
      ], [
        fhir:index 49;
@@ -1121,11 +1121,11 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleST5>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleST5" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-st5>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-st5" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - คัดกรองซึมเศร้า ST5" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE & Survey" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - คัดกรองซึมเศร้า ST5" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
@@ -1138,14 +1138,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleSmoking>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleSmoking" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-tg>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-tg" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Smoking" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - TG" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
        ]
      ], [
        fhir:index 51;
@@ -1155,14 +1155,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleTG>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleTG" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-wc>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-wc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - TG" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Waist Circumference" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
        ]
      ], [
        fhir:index 52;
@@ -1172,14 +1172,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/ObservationExampleWC>;
-         fhir:Reference.reference [ fhir:value "Observation/ObservationExampleWC" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example2q>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example2q" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Observation - Waist Circumference" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - คัดกรองซึมเศร้า 2Q" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital";
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital>
+         fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
        ]
      ], [
        fhir:index 53;
@@ -1189,11 +1189,11 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Organization/OrganizationExample>;
-         fhir:Reference.reference [ fhir:value "Organization/OrganizationExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Organization/organization-example>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Organization Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม Organization Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลโรงพยาบาล" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization>
@@ -1206,11 +1206,11 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Patient/PatientExample>;
-         fhir:Reference.reference [ fhir:value "Patient/PatientExample" ]
+         fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Patient/patient-example>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-example" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCD TH Patient Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่าง resource instance ที่สร้างตาม NCD Thailand Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ตัวอย่างข้อมูลคนไข้" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient";
          fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient>

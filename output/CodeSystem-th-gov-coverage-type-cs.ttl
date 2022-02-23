@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "THGovernmentCoverageTypeCS"];
   fhir:CodeSystem.title [ fhir:value "Thai Government Coverage Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-02-22T23:30:09+07:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-02-23T19:35:19+07:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io/" ]
+       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io" ]
      ]
   ];
   fhir:CodeSystem.description [ fhir:value "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย"];

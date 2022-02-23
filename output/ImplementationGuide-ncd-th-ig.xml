@@ -9,15 +9,15 @@
   <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig"/>
   <version value="0.1.0"/>
   <name value="ThaiNCDIG"/>
-  <title value="Thai NCD Implementation Guide"/>
+  <title value="(ร่าง) Thai NCD Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-02-22T23:30:09+07:00"/>
+  <date value="2022-02-23T19:35:19+07:00"/>
   <publisher value="Standard and Interoperability Lab Thailand"/>
   <contact>
     <name value="Standard and Interoperability Lab Thailand"/>
     <telecom>
       <system value="url"/>
-      <value value="https://sil-th.github.io/"/>
+      <value value="https://sil-th.github.io"/>
     </telecom>
   </contact>
   <description value="Implementation Guide สำหรับการแลกเปลี่ยนข้อมูลผู้ป่วย NCD"/>
@@ -231,8 +231,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-allergy-intolerance"/>
       </reference>
-      <name value="NCD TH AllergyIntolerance Profile"/>
-      <description value="Profile สำหรับ AllergyIntolerance resource"/>
+      <name value="AllergyIntolerance (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -242,8 +242,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-condition"/>
       </reference>
-      <name value="NCD TH Condition Profile"/>
-      <description value="Profile สำหรับ Condition resource"/>
+      <name value="Condition (NCD TH)"/>
+      <description value="ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -253,8 +253,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-coverage"/>
       </reference>
-      <name value="NCD TH Coverage Profile"/>
-      <description value="Profile สำหรับ Coverage resource"/>
+      <name value="Coverage (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลสิทธิ์การรักษา"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -264,8 +264,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-diagnostic-report-lab"/>
       </reference>
-      <name value="NCD TH DiagnosticReport Profile for Lab Report"/>
-      <description value="Profile สำหรับ DiagnosticReport resource"/>
+      <name value="DiagnosticReport Profile for Lab (NCD TH)"/>
+      <description value="ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -275,8 +275,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-encounter"/>
       </reference>
-      <name value="NCD TH Encounter Profile"/>
-      <description value="Profile สำหรับ Encounter resource"/>
+      <name value="Encounter (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลการรับบริการสุขภาพ"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -286,8 +286,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-episode-of-care"/>
       </reference>
-      <name value="NCD TH EpisodeOfCare Profile"/>
-      <description value="Profile สำหรับ EpisodeOfCare resource"/>
+      <name value="EpisodeOfCare (NCD TH)"/>
+      <description value="ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -297,8 +297,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-family-member-history"/>
       </reference>
-      <name value="NCD TH FamilyMemberHistory Profile"/>
-      <description value="Profile สำหรับ FamilyMemberHistory resource"/>
+      <name value="FamilyMemberHistory (NCD TH)"/>
+      <description value="ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -308,8 +308,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-media"/>
       </reference>
-      <name value="NCD TH Media Profile"/>
-      <description value="Profile สำหรับ Media resource"/>
+      <name value="Media (NCD TH)"/>
+      <description value="ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -319,8 +319,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-observation-lab"/>
       </reference>
-      <name value="NCD TH Observation Profile - Lab"/>
-      <description value="Profile สำหรับ Observation resource - Lab"/>
+      <name value="Observation Profile - Lab (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -330,8 +330,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-observation-pe-survey"/>
       </reference>
-      <name value="NCD TH Observation Profile - PE &amp; Survey"/>
-      <description value="Profile สำหรับ Observation resource - PE &amp; Survey"/>
+      <name value="Observation Profile - PE &amp; Survey (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -341,8 +341,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-observation-social"/>
       </reference>
-      <name value="NCD TH Observation Profile - Social History"/>
-      <description value="Profile สำหรับ Observation resource - Social History"/>
+      <name value="Observation Profile - Social (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -352,8 +352,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-observation-vital"/>
       </reference>
-      <name value="NCD TH Observation Profile - Vital Signs"/>
-      <description value="Profile สำหรับ Observation resource - Vital Signs"/>
+      <name value="Observation Profile - Vital Signs (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูล vital signs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -363,8 +363,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-organization"/>
       </reference>
-      <name value="NCD TH Organization Profile"/>
-      <description value="Profile สำหรับ Organization resource"/>
+      <name value="Organization (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลหน่วยงาน/องค์กร"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -374,8 +374,8 @@
       <reference>
         <reference value="StructureDefinition/ncdth-patient"/>
       </reference>
-      <name value="NCD TH Patient Profile"/>
-      <description value="Profile สำหรับ Patient resource"/>
+      <name value="Patient (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -427,10 +427,10 @@
         <valueString value="AllergyIntolerance"/>
       </extension>
       <reference>
-        <reference value="AllergyIntolerance/AllergyIntoleranceExample"/>
+        <reference value="AllergyIntolerance/allergy-intolerance-example"/>
       </reference>
-      <name value="NCD TH AllergyIntolerance Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม AllergyIntolerance Profile"/>
+      <name value="AllergyIntolerance"/>
+      <description value="ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance"/>
     </resource>
     <resource>
@@ -438,10 +438,10 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/ConditionExample1"/>
+        <reference value="Condition/condition-example1"/>
       </reference>
-      <name value="NCD TH Condition Example 1 - Hypertension"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Condition Profile"/>
+      <name value="Condition 1 - Hypertension"/>
+      <description value="ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"/>
     </resource>
     <resource>
@@ -449,10 +449,10 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/ConditionExample2"/>
+        <reference value="Condition/condition-example2"/>
       </reference>
-      <name value="NCD TH Condition Example 2 - Diabetes Mellitus"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Condition Profile"/>
+      <name value="Condition 2 - Diabetes Mellitus"/>
+      <description value="ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"/>
     </resource>
     <resource>
@@ -460,10 +460,10 @@
         <valueString value="Coverage"/>
       </extension>
       <reference>
-        <reference value="Coverage/CoverageExample"/>
+        <reference value="Coverage/coverage-example"/>
       </reference>
-      <name value="NCD TH Coverage Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Coverage Profile"/>
+      <name value="Coverage"/>
+      <description value="ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage"/>
     </resource>
     <resource>
@@ -471,10 +471,10 @@
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
-        <reference value="DiagnosticReport/DiagnosticReportLabExample1"/>
+        <reference value="DiagnosticReport/diagnostic-report-lab-example1"/>
       </reference>
-      <name value="NCD TH DiagnosticReport for Lab Report Example - Lipid Profile"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Lipid Profile"/>
+      <name value="DiagnosticReport - Lab Lipid Profile"/>
+      <description value="ตัวอย่างการรายงานผล Lipid Profile"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
     </resource>
     <resource>
@@ -482,10 +482,10 @@
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
-        <reference value="DiagnosticReport/DiagnosticReportLabExample2"/>
+        <reference value="DiagnosticReport/diagnostic-report-lab-example2"/>
       </reference>
-      <name value="NCD TH DiagnosticReport for Lab Report Example - Metabolic Profile"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม DiagnosticReport Profile เป็นข้อมูลรายงานผล Metabolic Profile"/>
+      <name value="DiagnosticReport - Lab Metabolic Profile"/>
+      <description value="ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
     </resource>
     <resource>
@@ -493,10 +493,10 @@
         <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Encounter/EncounterExample"/>
+        <reference value="Encounter/encounter-example"/>
       </reference>
-      <name value="NCD TH Encounter Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Encounter Profile"/>
+      <name value="Encounter"/>
+      <description value="ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter"/>
     </resource>
     <resource>
@@ -504,10 +504,10 @@
         <valueString value="EpisodeOfCare"/>
       </extension>
       <reference>
-        <reference value="EpisodeOfCare/EpisodeOfCareExample"/>
+        <reference value="EpisodeOfCare/episode-of-care-example"/>
       </reference>
-      <name value="NCD TH EpisodeOfCare Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม EpisodeOfCare Profile"/>
+      <name value="EpisodeOfCare"/>
+      <description value="ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care"/>
     </resource>
     <resource>
@@ -515,10 +515,10 @@
         <valueString value="FamilyMemberHistory"/>
       </extension>
       <reference>
-        <reference value="FamilyMemberHistory/FamilyMemberHistoryExample"/>
+        <reference value="FamilyMemberHistory/family-member-history-example"/>
       </reference>
-      <name value="NCD TH FamilyMemberHistory Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม FamilyMemberHistory Profile"/>
+      <name value="FamilyMemberHistory"/>
+      <description value="ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history"/>
     </resource>
     <resource>
@@ -526,10 +526,10 @@
         <valueString value="Media"/>
       </extension>
       <reference>
-        <reference value="Media/MediaExample"/>
+        <reference value="Media/media-example"/>
       </reference>
-      <name value="NCD TH Media Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Media Profile"/>
+      <name value="Media"/>
+      <description value="ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media"/>
     </resource>
     <resource>
@@ -537,10 +537,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExample2Q"/>
+        <reference value="Observation/observation-example-af"/>
       </reference>
-      <name value="NCD TH Observation - คัดกรองซึมเศร้า 2Q"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
+      <name value="Observation - AF"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
     </resource>
     <resource>
@@ -548,21 +548,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleAF"/>
+        <reference value="Observation/observation-example-age"/>
       </reference>
-      <name value="NCD TH Observation - AF"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleAge"/>
-      </reference>
-      <name value="NCD TH Observation - Age"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"/>
+      <name value="Observation - Age"/>
+      <description value="ตัวอย่างข้อมูลอายุของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
     </resource>
     <resource>
@@ -570,10 +559,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleAlcohol"/>
+        <reference value="Observation/observation-example-alcohol"/>
       </reference>
-      <name value="NCD TH Observation - Alcohol"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"/>
+      <name value="Observation - Alcohol"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
     </resource>
     <resource>
@@ -581,10 +570,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleBH"/>
+        <reference value="Observation/observation-example-bh"/>
       </reference>
-      <name value="NCD TH Observation - Body Height"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"/>
+      <name value="Observation - Body Height"/>
+      <description value="ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
     </resource>
     <resource>
@@ -592,10 +581,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleBMI"/>
+        <reference value="Observation/observation-example-bmi"/>
       </reference>
-      <name value="NCD TH Observation - BMI"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"/>
+      <name value="Observation - BMI"/>
+      <description value="ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
     </resource>
     <resource>
@@ -603,10 +592,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleBP"/>
+        <reference value="Observation/observation-example-bp"/>
       </reference>
-      <name value="NCD TH Observation - Blood Pressure (BP)"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"/>
+      <name value="Observation - Blood Pressure (BP)"/>
+      <description value="ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
     </resource>
     <resource>
@@ -614,10 +603,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleBUN"/>
+        <reference value="Observation/observation-example-bun"/>
       </reference>
-      <name value="NCD TH Observation - BUN"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
+      <name value="Observation - BUN"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
     </resource>
     <resource>
@@ -625,10 +614,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleBW"/>
+        <reference value="Observation/observation-example-bw"/>
       </reference>
-      <name value="NCD TH Observation - Body Weight"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"/>
+      <name value="Observation - Body Weight"/>
+      <description value="ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
     </resource>
     <resource>
@@ -636,21 +625,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleCVD"/>
+        <reference value="Observation/observation-example-chol"/>
       </reference>
-      <name value="NCD TH Observation - CVD Risk"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleChol"/>
-      </reference>
-      <name value="NCD TH Observation - Chol"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
+      <name value="Observation - Cholesterol"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
     </resource>
     <resource>
@@ -658,10 +636,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleCr"/>
+        <reference value="Observation/observation-example-cr"/>
       </reference>
-      <name value="NCD TH Observation - Creatinine"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
+      <name value="Observation - Creatinine"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
     </resource>
     <resource>
@@ -669,10 +647,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleDFScreening"/>
+        <reference value="Observation/observation-example-cvd"/>
       </reference>
-      <name value="NCD TH Observation - Diabetic Foot Screening"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
+      <name value="Observation - CVD Risk"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
     </resource>
     <resource>
@@ -680,10 +658,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleDNScreening"/>
+        <reference value="Observation/observation-example-df-screening"/>
       </reference>
-      <name value="NCD TH Observation - Diabetic Nephropathy Screening"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
+      <name value="Observation - Diabetic Foot Screening"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
     </resource>
     <resource>
@@ -691,21 +669,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleDRScreening"/>
+        <reference value="Observation/observation-example-diet"/>
       </reference>
-      <name value="NCD TH Observation - Diabetic Retinopathy Screening"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleDiet"/>
-      </reference>
-      <name value="NCD TH Observation - Diet"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"/>
+      <name value="Observation - Diet"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
     </resource>
     <resource>
@@ -713,65 +680,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleFBS"/>
+        <reference value="Observation/observation-example-dn-screening"/>
       </reference>
-      <name value="NCD TH Observation - Fasting Blood Sugar (FBS)"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleHDL"/>
-      </reference>
-      <name value="NCD TH Observation - HDL"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleLDL"/>
-      </reference>
-      <name value="NCD TH Observation - LDL"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExamplePhysical"/>
-      </reference>
-      <name value="NCD TH Observation - Physical Activity"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleRBS"/>
-      </reference>
-      <name value="NCD TH Observation - Resting Blood Sugar (RBS)"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationExampleST5"/>
-      </reference>
-      <name value="NCD TH Observation - คัดกรองซึมเศร้า ST5"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - PE &amp; Survey"/>
+      <name value="Observation - Diabetic Nephropathy Screening"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
     </resource>
     <resource>
@@ -779,21 +691,21 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleSmoking"/>
+        <reference value="Observation/observation-example-dr-screening"/>
       </reference>
-      <name value="NCD TH Observation - Smoking"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Social"/>
-      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+      <name value="Observation - Diabetic Retinopathy Screening"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleTG"/>
+        <reference value="Observation/observation-example-fbs"/>
       </reference>
-      <name value="NCD TH Observation - TG"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Laboratory"/>
+      <name value="Observation - Fasting Blood Sugar (FBS)"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
     </resource>
     <resource>
@@ -801,21 +713,109 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ObservationExampleWC"/>
+        <reference value="Observation/observation-example-hdl"/>
       </reference>
-      <name value="NCD TH Observation - Waist Circumference"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Observation Profile - Vital Signs"/>
+      <name value="Observation - HDL"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ldl"/>
+      </reference>
+      <name value="Observation - LDL"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-physical"/>
+      </reference>
+      <name value="Observation - Physical Activity"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-rbs"/>
+      </reference>
+      <name value="Observation - Resting Blood Sugar (RBS)"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-smoking"/>
+      </reference>
+      <name value="Observation - Smoking"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-st5"/>
+      </reference>
+      <name value="Observation - คัดกรองซึมเศร้า ST5"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-tg"/>
+      </reference>
+      <name value="Observation - TG"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-wc"/>
+      </reference>
+      <name value="Observation - Waist Circumference"/>
+      <description value="ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example2q"/>
+      </reference>
+      <name value="Observation - คัดกรองซึมเศร้า 2Q"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/OrganizationExample"/>
+        <reference value="Organization/organization-example"/>
       </reference>
-      <name value="NCD TH Organization Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม Organization Profile"/>
+      <name value="Organization"/>
+      <description value="ตัวอย่างข้อมูลโรงพยาบาล"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization"/>
     </resource>
     <resource>
@@ -823,10 +823,10 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="Patient/patient-example"/>
       </reference>
-      <name value="NCD TH Patient Example"/>
-      <description value="ตัวอย่าง resource instance ที่สร้างตาม NCD Thailand Patient Profile"/>
+      <name value="Patient"/>
+      <description value="ตัวอย่างข้อมูลคนไข้"/>
       <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient"/>
     </resource>
     <page>

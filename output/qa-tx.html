@@ -8,7 +8,7 @@ Accept-Charset: UTF-8
 Accept: application/fhir+xml
 Content-Type: application/fhir+xml;charset=UTF-8
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://tmlt.this.or.th&quot;/&gt;&lt;code value=&quot;320262&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;default-to-latest-version&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;url value=&quot;https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs--0&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;http://tmlt.this.or.th&quot;/&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;0aa937ef-cbc0-415f-b689-d6e864098073&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;x-system-cache-id&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://tmlt.this.or.th&quot;/&gt;&lt;code value=&quot;320259&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;default-to-latest-version&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;url value=&quot;https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs--0&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;http://tmlt.this.or.th&quot;/&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;6aa48296-8724-4187-b16a-60630ac1d2e6&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;x-system-cache-id&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 <pre>
 200
@@ -19,42 +19,13 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:655
 content-type:application/fhir+xml; charset=UTF-8
-date:Tue, 22 Feb 2022 16:30:15 GMT
-last-modified:Tue, 22 Feb 2022 16:30:15 GMT
+date:Wed, 23 Feb 2022 12:35:25 GMT
+last-modified:Wed, 23 Feb 2022 12:35:25 GMT
 pragma:no-cache
 server:nginx
 x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
-x-request-id:66-2155910
+x-request-id:66-2252240
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;false&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The code system &amp;quot;http://tmlt.this.or.th&amp;quot; in the include in &amp;quot;https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs--0&amp;quot; is not known; The code system &amp;apos;http://tmlt.this.or.th&amp;apos; is not known (encountered paired with code = &amp;apos;320262&amp;apos;); The code provided (http://tmlt.this.or.th#320262) is not valid&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cause&quot;/&gt;&lt;valueString value=&quot;not-found&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
-</pre>
-<hr/><a name="l2"> </a>
-<p>#2</p>
-<pre>
-POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
-User-Agent: hapi-fhir-tooling-client
-Accept-Charset: UTF-8
-Accept: application/fhir+xml
-Content-Type: application/fhir+xml;charset=UTF-8
-
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/jpg&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;implySystem&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;default-to-latest-version&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;id value=&quot;mimetypes&quot;/&gt;&lt;meta&gt;&lt;lastUpdated value=&quot;2019-11-01T05:29:23.356+07:00&quot;/&gt;&lt;profile value=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset&quot;/&gt;&lt;/meta&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;&gt;&lt;valueCode value=&quot;fhir&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;&lt;valueCode value=&quot;normative&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;&lt;valueCode value=&quot;4.0.0&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;&lt;valueInteger value=&quot;5&quot;/&gt;&lt;/extension&gt;&lt;url value=&quot;http://hl7.org/fhir/ValueSet/mimetypes&quot;/&gt;&lt;identifier&gt;&lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;&lt;value value=&quot;urn:oid:2.16.840.1.113883.4.642.3.1024&quot;/&gt;&lt;/identifier&gt;&lt;version value=&quot;4.0.1&quot;/&gt;&lt;name value=&quot;Mime Types&quot;/&gt;&lt;title value=&quot;MimeType&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;experimental value=&quot;false&quot;/&gt;&lt;date value=&quot;2019-11-01T09:29:23+11:00&quot;/&gt;&lt;publisher value=&quot;HL7 International - FHIR-Infrastructure&quot;/&gt;&lt;contact&gt;&lt;telecom&gt;&lt;system value=&quot;url&quot;/&gt;&lt;value value=&quot;http://hl7.org/fhir&quot;/&gt;&lt;/telecom&gt;&lt;/contact&gt;&lt;description value=&quot;This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;0aa937ef-cbc0-415f-b689-d6e864098073&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;x-system-cache-id&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
-</pre>
-<pre>
-200
-access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
-access-control-allow-origin:*
-access-control-expose-headers:Content-Location, Location
-cache-control:public, max-age=600
-connection:keep-alive
-content-length:400
-content-type:application/fhir+xml; charset=UTF-8
-date:Tue, 22 Feb 2022 16:30:16 GMT
-last-modified:Tue, 22 Feb 2022 16:30:16 GMT
-pragma:no-cache
-server:nginx
-x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
-x-request-id:66-2155914
-
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;image/jpg&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;system&quot;/&gt;&lt;valueString value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;code&quot;/&gt;&lt;valueString value=&quot;image/jpg&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;false&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The code system &amp;quot;http://tmlt.this.or.th&amp;quot; in the include in &amp;quot;https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs--0&amp;quot; is not known; The code system &amp;apos;http://tmlt.this.or.th&amp;apos; is not known (encountered paired with code = &amp;apos;320259&amp;apos;); The code provided (http://tmlt.this.or.th#320259) is not valid&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cause&quot;/&gt;&lt;valueString value=&quot;not-found&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 </head></html>

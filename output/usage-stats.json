@@ -8,79 +8,79 @@
     "AllergyIntolerance": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance",
-        "title": "NCD TH AllergyIntolerance Profile"
+        "title": "AllergyIntolerance (NCD TH)"
       }
     ],
     "Condition": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition",
-        "title": "NCD TH Condition Profile"
+        "title": "Condition (NCD TH)"
       }
     ],
     "Coverage": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage",
-        "title": "NCD TH Coverage Profile"
+        "title": "Coverage (NCD TH)"
       }
     ],
     "DiagnosticReport": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab",
-        "title": "NCD TH DiagnosticReport Profile for Lab Report"
+        "title": "DiagnosticReport Profile for Lab (NCD TH)"
       }
     ],
     "Encounter": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter",
-        "title": "NCD TH Encounter Profile"
+        "title": "Encounter (NCD TH)"
       }
     ],
     "EpisodeOfCare": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care",
-        "title": "NCD TH EpisodeOfCare Profile"
+        "title": "EpisodeOfCare (NCD TH)"
       }
     ],
     "FamilyMemberHistory": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history",
-        "title": "NCD TH FamilyMemberHistory Profile"
+        "title": "FamilyMemberHistory (NCD TH)"
       }
     ],
     "Media": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media",
-        "title": "NCD TH Media Profile"
+        "title": "Media (NCD TH)"
       }
     ],
     "Observation": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab",
-        "title": "NCD TH Observation Profile - Lab"
+        "title": "Observation Profile - Lab (NCD TH)"
       },
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey",
-        "title": "NCD TH Observation Profile - PE \u0026 Survey"
+        "title": "Observation Profile - PE \u0026 Survey (NCD TH)"
       },
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social",
-        "title": "NCD TH Observation Profile - Social History"
+        "title": "Observation Profile - Social (NCD TH)"
       },
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital",
-        "title": "NCD TH Observation Profile - Vital Signs"
+        "title": "Observation Profile - Vital Signs (NCD TH)"
       }
     ],
     "Organization": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization",
-        "title": "NCD TH Organization Profile"
+        "title": "Organization (NCD TH)"
       }
     ],
     "Patient": [
       {
         "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient",
-        "title": "NCD TH Patient Profile"
+        "title": "Patient (NCD TH)"
       }
     ]
   },
