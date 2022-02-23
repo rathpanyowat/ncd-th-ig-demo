@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "th-gov-coverage-type-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-th-gov-coverage-type-cs.html\"><code>https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs</code></a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-coverage-type.html\">http://hl7.org/fhir/ValueSet/coverage-type</a></li></ul></div>"
+  },
+  "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/th-gov-coverage-type-vs",
+  "version": "0.1.0",
+  "name": "THGovernmentCoverageTypeVS",
+  "title": "Thai Government Coverage Type Value Set",
+  "status": "active",
+  "date": "2022-02-23T12:43:41+00:00",
+  "publisher": "Standard and Interoperability Lab Thailand",
+  "contact": [
+    {
+      "name": "Standard and Interoperability Lab Thailand",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://sil-th.github.io"
+        }
+      ]
+    }
+  ],
+  "description": "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "TH",
+          "display": "Thailand"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/coverage-type"
+        ]
+      }
+    ]
+  }
+}

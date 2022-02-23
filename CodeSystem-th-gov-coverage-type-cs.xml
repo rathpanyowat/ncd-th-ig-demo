@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="th-gov-coverage-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">UC<a name="th-gov-coverage-type-cs-UC"> </a></td><td>Universal Coverage</td><td>ประกันสุขภาพถ้วนหน้า</td></tr><tr><td style="white-space:nowrap">SS<a name="th-gov-coverage-type-cs-SS"> </a></td><td>Social Security</td><td>ประกันสังคม</td></tr><tr><td style="white-space:nowrap">CS<a name="th-gov-coverage-type-cs-CS"> </a></td><td>Civil Servant Medical Benefit Scheme</td><td>รักษาพยาบาลข้าราชการ</td></tr></table></div>
+  </text>
+  <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"/>
+  <version value="0.1.0"/>
+  <name value="THGovernmentCoverageTypeCS"/>
+  <title value="Thai Government Coverage Type Code System"/>
+  <status value="active"/>
+  <date value="2022-02-23T12:43:41+00:00"/>
+  <publisher value="Standard and Interoperability Lab Thailand"/>
+  <contact>
+    <name value="Standard and Interoperability Lab Thailand"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://sil-th.github.io"/>
+    </telecom>
+  </contact>
+  <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="TH"/>
+      <display value="Thailand"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="UC"/>
+    <display value="Universal Coverage"/>
+    <definition value="ประกันสุขภาพถ้วนหน้า"/>
+  </concept>
+  <concept>
+    <code value="SS"/>
+    <display value="Social Security"/>
+    <definition value="ประกันสังคม"/>
+  </concept>
+  <concept>
+    <code value="CS"/>
+    <display value="Civil Servant Medical Benefit Scheme"/>
+    <definition value="รักษาพยาบาลข้าราชการ"/>
+  </concept>
+</CodeSystem>

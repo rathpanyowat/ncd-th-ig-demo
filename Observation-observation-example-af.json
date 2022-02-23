@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-example-af",
+  "meta": {
+    "profile": [
+      "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"observation-example-af\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncdth-observation-pe-survey.html\">Observation Profile - PE &amp; Survey (NCD TH)</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: History of atrial fibrillation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#312442005)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> \" ใจดี\"</p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter/encounter-example</a></p><p><b>effective</b>: 2022-02-20 02:28:17+0700</p><p><b>value</b>: Negative for Atrial Fibrillation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#260385009 \"Negative\")</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "exam",
+          "display": "Exam"
+        }
+      ],
+      "text": "Exam"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "312442005",
+        "display": "History of atrial fibrillation"
+      }
+    ],
+    "text": "History of atrial fibrillation"
+  },
+  "subject": {
+    "reference": "Patient/patient-example"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-example"
+  },
+  "effectiveDateTime": "2022-02-20T14:28:17+07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "260385009",
+        "display": "Negative"
+      }
+    ],
+    "text": "Negative for Atrial Fibrillation"
+  }
+}

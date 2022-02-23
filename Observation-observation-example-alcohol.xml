@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-example-alcohol"/>
+  <meta>
+    <profile value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "observation-example-alcohol" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncdth-observation-social.html">Observation Profile - Social (NCD TH)</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social)</span></p><p><b>code</b>: History of Alcohol use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11331-6)</span></p><p><b>subject</b>: <a href="Patient-patient-example.html">Patient/patient-example</a> " ใจดี"</p><p><b>encounter</b>: <a href="Encounter-encounter-example.html">Encounter/encounter-example</a></p><p><b>effective</b>: 2022-02-20 02:28:17+0700</p><p><b>value</b>: Denies alcohol use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#704198001)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social"/>
+      <display value="Social"/>
+    </coding>
+    <text value="Social"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11331-6"/>
+      <display value="History of Alcohol use"/>
+    </coding>
+    <text value="History of Alcohol use"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example"/>
+  </encounter>
+  <effectiveDateTime value="2022-02-20T14:28:17+07:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="704198001"/>
+      <display value="Denies alcohol use"/>
+    </coding>
+    <text value="Denies alcohol use"/>
+  </valueCodeableConcept>
+</Observation>

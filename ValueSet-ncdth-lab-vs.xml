@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ncdth-lab-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://tmlt.this.or.th</code></li></ul></div>
+  </text>
+  <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-lab-vs"/>
+  <version value="0.1.0"/>
+  <name value="NCDTHLaboratoryVS"/>
+  <title value="NCD TH Laboratory Value Set"/>
+  <status value="active"/>
+  <date value="2022-02-23T12:43:41+00:00"/>
+  <publisher value="Standard and Interoperability Lab Thailand"/>
+  <contact>
+    <name value="Standard and Interoperability Lab Thailand"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://sil-th.github.io"/>
+    </telecom>
+  </contact>
+  <description value="รหัสมาตรฐานการตรวจทางห้องปฏิบัติการที่ใช้ใน NCD IG"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="TH"/>
+      <display value="Thailand"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://tmlt.this.or.th"/>
+    </include>
+  </compose>
+</ValueSet>

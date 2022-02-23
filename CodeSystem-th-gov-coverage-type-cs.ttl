@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "th-gov-coverage-type-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">UC<a name=\"th-gov-coverage-type-cs-UC\"> </a></td><td>Universal Coverage</td><td>ประกันสุขภาพถ้วนหน้า</td></tr><tr><td style=\"white-space:nowrap\">SS<a name=\"th-gov-coverage-type-cs-SS\"> </a></td><td>Social Security</td><td>ประกันสังคม</td></tr><tr><td style=\"white-space:nowrap\">CS<a name=\"th-gov-coverage-type-cs-CS\"> </a></td><td>Civil Servant Medical Benefit Scheme</td><td>รักษาพยาบาลข้าราชการ</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "THGovernmentCoverageTypeCS"];
+  fhir:CodeSystem.title [ fhir:value "Thai Government Coverage Type Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-02-23T12:43:41+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Standard and Interoperability Lab Thailand"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Standard and Interoperability Lab Thailand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://sil-th.github.io" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "TH" ];
+       fhir:Coding.display [ fhir:value "Thailand" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "UC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Universal Coverage" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ประกันสุขภาพถ้วนหน้า" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "SS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Social Security" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ประกันสังคม" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Civil Servant Medical Benefit Scheme" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "รักษาพยาบาลข้าราชการ" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

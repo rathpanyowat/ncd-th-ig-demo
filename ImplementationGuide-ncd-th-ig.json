@@ -1,0 +1,1205 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ncd-th-ig",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ThaiNCDIG</h2><p>The official URL for this implementation guide is: </p><pre>https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig</pre><div><p>Implementation Guide สำหรับการแลกเปลี่ยนข้อมูลผู้ป่วย NCD</p>\n</div></div>"
+  },
+  "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig",
+  "version": "0.1.0",
+  "name": "ThaiNCDIG",
+  "title": "(ร่าง) Thai NCD Implementation Guide",
+  "status": "draft",
+  "date": "2022-02-23T12:43:41+00:00",
+  "publisher": "Standard and Interoperability Lab Thailand",
+  "contact": [
+    {
+      "name": "Standard and Interoperability Lab Thailand",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://sil-th.github.io"
+        }
+      ]
+    }
+  ],
+  "description": "Implementation Guide สำหรับการแลกเปลี่ยนข้อมูลผู้ป่วย NCD",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "TH",
+          "display": "Thailand"
+        }
+      ]
+    }
+  ],
+  "packageId": "ncd-th-ig",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2022+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "show-inherited-invariants"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludettl"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "https://rathpanyowat.github.io/ncd-th-ig-demo/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-allergy-intolerance"
+        },
+        "name": "AllergyIntolerance (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-condition"
+        },
+        "name": "Condition (NCD TH)",
+        "description": "ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-coverage"
+        },
+        "name": "Coverage (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลสิทธิ์การรักษา",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-diagnostic-report-lab"
+        },
+        "name": "DiagnosticReport Profile for Lab (NCD TH)",
+        "description": "ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-encounter"
+        },
+        "name": "Encounter (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลการรับบริการสุขภาพ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-episode-of-care"
+        },
+        "name": "EpisodeOfCare (NCD TH)",
+        "description": "ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-family-member-history"
+        },
+        "name": "FamilyMemberHistory (NCD TH)",
+        "description": "ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-media"
+        },
+        "name": "Media (NCD TH)",
+        "description": "ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-observation-lab"
+        },
+        "name": "Observation Profile - Lab (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-observation-pe-survey"
+        },
+        "name": "Observation Profile - PE & Survey (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-observation-social"
+        },
+        "name": "Observation Profile - Social (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-observation-vital"
+        },
+        "name": "Observation Profile - Vital Signs (NCD TH)",
+        "description": "ใช้บันทึกข้อมูล vital signs",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-organization"
+        },
+        "name": "Organization (NCD TH)",
+        "description": "ใช้บันทึกข้อมูลหน่วยงาน/องค์กร",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncdth-patient"
+        },
+        "name": "Patient (NCD TH)",
+        "description": "ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ncdth-lab-vs"
+        },
+        "name": "NCD TH Laboratory Value Set",
+        "description": "รหัสมาตรฐานการตรวจทางห้องปฏิบัติการที่ใช้ใน NCD IG",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ncdth-vital-vs"
+        },
+        "name": "NCD TH Vital Signs Value Set",
+        "description": "รหัสจากระบบ LOINC ในการบันทึกชนิดการตรวจ vital signs",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/th-gov-coverage-type-vs"
+        },
+        "name": "Thai Government Coverage Type Value Set",
+        "description": "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/th-gov-coverage-type-cs"
+        },
+        "name": "Thai Government Coverage Type Code System",
+        "description": "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/allergy-intolerance-example"
+        },
+        "name": "AllergyIntolerance",
+        "description": "ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/condition-example1"
+        },
+        "name": "Condition 1 - Hypertension",
+        "description": "ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/condition-example2"
+        },
+        "name": "Condition 2 - Diabetes Mellitus",
+        "description": "ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/coverage-example"
+        },
+        "name": "Coverage",
+        "description": "ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/diagnostic-report-lab-example1"
+        },
+        "name": "DiagnosticReport - Lab Lipid Profile",
+        "description": "ตัวอย่างการรายงานผล Lipid Profile",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/diagnostic-report-lab-example2"
+        },
+        "name": "DiagnosticReport - Lab Metabolic Profile",
+        "description": "ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/encounter-example"
+        },
+        "name": "Encounter",
+        "description": "ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "EpisodeOfCare"
+          }
+        ],
+        "reference": {
+          "reference": "EpisodeOfCare/episode-of-care-example"
+        },
+        "name": "EpisodeOfCare",
+        "description": "ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "FamilyMemberHistory"
+          }
+        ],
+        "reference": {
+          "reference": "FamilyMemberHistory/family-member-history-example"
+        },
+        "name": "FamilyMemberHistory",
+        "description": "ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Media"
+          }
+        ],
+        "reference": {
+          "reference": "Media/media-example"
+        },
+        "name": "Media",
+        "description": "ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-af"
+        },
+        "name": "Observation - AF",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-age"
+        },
+        "name": "Observation - Age",
+        "description": "ตัวอย่างข้อมูลอายุของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-alcohol"
+        },
+        "name": "Observation - Alcohol",
+        "description": "ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-bh"
+        },
+        "name": "Observation - Body Height",
+        "description": "ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-bmi"
+        },
+        "name": "Observation - BMI",
+        "description": "ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-bp"
+        },
+        "name": "Observation - Blood Pressure (BP)",
+        "description": "ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-bun"
+        },
+        "name": "Observation - BUN",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-bw"
+        },
+        "name": "Observation - Body Weight",
+        "description": "ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-chol"
+        },
+        "name": "Observation - Cholesterol",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-cr"
+        },
+        "name": "Observation - Creatinine",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-cvd"
+        },
+        "name": "Observation - CVD Risk",
+        "description": "ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-df-screening"
+        },
+        "name": "Observation - Diabetic Foot Screening",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-diet"
+        },
+        "name": "Observation - Diet",
+        "description": "ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-dn-screening"
+        },
+        "name": "Observation - Diabetic Nephropathy Screening",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-dr-screening"
+        },
+        "name": "Observation - Diabetic Retinopathy Screening",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-fbs"
+        },
+        "name": "Observation - Fasting Blood Sugar (FBS)",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-hdl"
+        },
+        "name": "Observation - HDL",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-ldl"
+        },
+        "name": "Observation - LDL",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-physical"
+        },
+        "name": "Observation - Physical Activity",
+        "description": "ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-rbs"
+        },
+        "name": "Observation - Resting Blood Sugar (RBS)",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-smoking"
+        },
+        "name": "Observation - Smoking",
+        "description": "ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-st5"
+        },
+        "name": "Observation - คัดกรองซึมเศร้า ST5",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-tg"
+        },
+        "name": "Observation - TG",
+        "description": "ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example-wc"
+        },
+        "name": "Observation - Waist Circumference",
+        "description": "ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-example2q"
+        },
+        "name": "Observation - คัดกรองซึมเศร้า 2Q",
+        "description": "ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization-example"
+        },
+        "name": "Organization",
+        "description": "ตัวอย่างข้อมูลโรงพยาบาล",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient-example"
+        },
+        "name": "Patient",
+        "description": "ตัวอย่างข้อมูลคนไข้",
+        "exampleCanonical": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-example"/>
+  <meta>
+    <profile value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "organization-example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncdth-organization.html">Organization (NCD TH)</a></p></div><p><b>identifier</b>: id: 12345</p><p><b>name</b>: โรงพยาบาล NCD</p><p><b>telecom</b>: <a href="tel:+66(333)2222">+66 (333) 2222</a></p><p><b>address</b>: 199 ถ.เอราวัณ แขวงสามเสนใน เขตพญาไท กรุงเทพมหานคร 10400</p></div>
+  </text>
+  <identifier>
+    <system value="http://thcc.or.th/hcode"/>
+    <value value="12345"/>
+  </identifier>
+  <name value="โรงพยาบาล NCD"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+66 (333) 2222"/>
+  </telecom>
+  <address>
+    <text value="199 ถ.เอราวัณ แขวงสามเสนใน เขตพญาไท กรุงเทพมหานคร 10400"/>
+    <line value="199 ถ.เอราวัณ"/>
+    <city value="แขวงสามเสนใน"/>
+    <district value="เขตพญาไท"/>
+    <state value="กรุงเทพมหานคร"/>
+    <postalCode value="10400"/>
+  </address>
+</Organization>

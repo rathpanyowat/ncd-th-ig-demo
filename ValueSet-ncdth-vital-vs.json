@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ncdth-vital-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/30525-0.html\">30525-0</a></td><td>Age</td></tr></table></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html\">http://hl7.org/fhir/ValueSet/observation-vitalsignresult</a></li></ul></div>"
+  },
+  "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/ValueSet/ncdth-vital-vs",
+  "version": "0.1.0",
+  "name": "NCDTHVitalVS",
+  "title": "NCD TH Vital Signs Value Set",
+  "status": "active",
+  "date": "2022-02-23T12:43:41+00:00",
+  "publisher": "Standard and Interoperability Lab Thailand",
+  "contact": [
+    {
+      "name": "Standard and Interoperability Lab Thailand",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://sil-th.github.io"
+        }
+      ]
+    }
+  ],
+  "description": "รหัสจากระบบ LOINC ในการบันทึกชนิดการตรวจ vital signs",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "TH",
+          "display": "Thailand"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "30525-0",
+            "display": "Age"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/observation-vitalsignresult"
+        ]
+      }
+    ]
+  }
+}

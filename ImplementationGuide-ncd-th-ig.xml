@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ncd-th-ig"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ThaiNCDIG</h2><p>The official URL for this implementation guide is: </p><pre>https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig</pre><div><p>Implementation Guide สำหรับการแลกเปลี่ยนข้อมูลผู้ป่วย NCD</p>
+</div></div>
+  </text>
+  <url value="https://rathpanyowat.github.io/ncd-th-ig-demo/ImplementationGuide/ncd-th-ig"/>
+  <version value="0.1.0"/>
+  <name value="ThaiNCDIG"/>
+  <title value="(ร่าง) Thai NCD Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2022-02-23T12:43:41+00:00"/>
+  <publisher value="Standard and Interoperability Lab Thailand"/>
+  <contact>
+    <name value="Standard and Interoperability Lab Thailand"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://sil-th.github.io"/>
+    </telecom>
+  </contact>
+  <description value="Implementation Guide สำหรับการแลกเปลี่ยนข้อมูลผู้ป่วย NCD"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="TH"/>
+      <display value="Thailand"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="ncd-th-ig"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://rathpanyowat.github.io/ncd-th-ig-demo/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-allergy-intolerance"/>
+      </reference>
+      <name value="AllergyIntolerance (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-condition"/>
+      </reference>
+      <name value="Condition (NCD TH)"/>
+      <description value="ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-coverage"/>
+      </reference>
+      <name value="Coverage (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลสิทธิ์การรักษา"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-diagnostic-report-lab"/>
+      </reference>
+      <name value="DiagnosticReport Profile for Lab (NCD TH)"/>
+      <description value="ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-encounter"/>
+      </reference>
+      <name value="Encounter (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลการรับบริการสุขภาพ"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-episode-of-care"/>
+      </reference>
+      <name value="EpisodeOfCare (NCD TH)"/>
+      <description value="ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-family-member-history"/>
+      </reference>
+      <name value="FamilyMemberHistory (NCD TH)"/>
+      <description value="ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-media"/>
+      </reference>
+      <name value="Media (NCD TH)"/>
+      <description value="ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-observation-lab"/>
+      </reference>
+      <name value="Observation Profile - Lab (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-observation-pe-survey"/>
+      </reference>
+      <name value="Observation Profile - PE &amp; Survey (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-observation-social"/>
+      </reference>
+      <name value="Observation Profile - Social (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-observation-vital"/>
+      </reference>
+      <name value="Observation Profile - Vital Signs (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูล vital signs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-organization"/>
+      </reference>
+      <name value="Organization (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูลหน่วยงาน/องค์กร"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncdth-patient"/>
+      </reference>
+      <name value="Patient (NCD TH)"/>
+      <description value="ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ncdth-lab-vs"/>
+      </reference>
+      <name value="NCD TH Laboratory Value Set"/>
+      <description value="รหัสมาตรฐานการตรวจทางห้องปฏิบัติการที่ใช้ใน NCD IG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ncdth-vital-vs"/>
+      </reference>
+      <name value="NCD TH Vital Signs Value Set"/>
+      <description value="รหัสจากระบบ LOINC ในการบันทึกชนิดการตรวจ vital signs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/th-gov-coverage-type-vs"/>
+      </reference>
+      <name value="Thai Government Coverage Type Value Set"/>
+      <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/th-gov-coverage-type-cs"/>
+      </reference>
+      <name value="Thai Government Coverage Type Code System"/>
+      <description value="รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergy-intolerance-example"/>
+      </reference>
+      <name value="AllergyIntolerance"/>
+      <description value="ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example1"/>
+      </reference>
+      <name value="Condition 1 - Hypertension"/>
+      <description value="ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/condition-example2"/>
+      </reference>
+      <name value="Condition 2 - Diabetes Mellitus"/>
+      <description value="ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/coverage-example"/>
+      </reference>
+      <name value="Coverage"/>
+      <description value="ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnostic-report-lab-example1"/>
+      </reference>
+      <name value="DiagnosticReport - Lab Lipid Profile"/>
+      <description value="ตัวอย่างการรายงานผล Lipid Profile"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnostic-report-lab-example2"/>
+      </reference>
+      <name value="DiagnosticReport - Lab Metabolic Profile"/>
+      <description value="ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/encounter-example"/>
+      </reference>
+      <name value="Encounter"/>
+      <description value="ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/episode-of-care-example"/>
+      </reference>
+      <name value="EpisodeOfCare"/>
+      <description value="ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="FamilyMemberHistory"/>
+      </extension>
+      <reference>
+        <reference value="FamilyMemberHistory/family-member-history-example"/>
+      </reference>
+      <name value="FamilyMemberHistory"/>
+      <description value="ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Media"/>
+      </extension>
+      <reference>
+        <reference value="Media/media-example"/>
+      </reference>
+      <name value="Media"/>
+      <description value="ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-af"/>
+      </reference>
+      <name value="Observation - AF"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-age"/>
+      </reference>
+      <name value="Observation - Age"/>
+      <description value="ตัวอย่างข้อมูลอายุของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-alcohol"/>
+      </reference>
+      <name value="Observation - Alcohol"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-bh"/>
+      </reference>
+      <name value="Observation - Body Height"/>
+      <description value="ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-bmi"/>
+      </reference>
+      <name value="Observation - BMI"/>
+      <description value="ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-bp"/>
+      </reference>
+      <name value="Observation - Blood Pressure (BP)"/>
+      <description value="ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-bun"/>
+      </reference>
+      <name value="Observation - BUN"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-bw"/>
+      </reference>
+      <name value="Observation - Body Weight"/>
+      <description value="ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-chol"/>
+      </reference>
+      <name value="Observation - Cholesterol"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-cr"/>
+      </reference>
+      <name value="Observation - Creatinine"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-cvd"/>
+      </reference>
+      <name value="Observation - CVD Risk"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-df-screening"/>
+      </reference>
+      <name value="Observation - Diabetic Foot Screening"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-diet"/>
+      </reference>
+      <name value="Observation - Diet"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-dn-screening"/>
+      </reference>
+      <name value="Observation - Diabetic Nephropathy Screening"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-dr-screening"/>
+      </reference>
+      <name value="Observation - Diabetic Retinopathy Screening"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-fbs"/>
+      </reference>
+      <name value="Observation - Fasting Blood Sugar (FBS)"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-hdl"/>
+      </reference>
+      <name value="Observation - HDL"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-ldl"/>
+      </reference>
+      <name value="Observation - LDL"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-physical"/>
+      </reference>
+      <name value="Observation - Physical Activity"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-rbs"/>
+      </reference>
+      <name value="Observation - Resting Blood Sugar (RBS)"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-smoking"/>
+      </reference>
+      <name value="Observation - Smoking"/>
+      <description value="ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-st5"/>
+      </reference>
+      <name value="Observation - คัดกรองซึมเศร้า ST5"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-tg"/>
+      </reference>
+      <name value="Observation - TG"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example-wc"/>
+      </reference>
+      <name value="Observation - Waist Circumference"/>
+      <description value="ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-example2q"/>
+      </reference>
+      <name value="Observation - คัดกรองซึมเศร้า 2Q"/>
+      <description value="ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-example"/>
+      </reference>
+      <name value="Organization"/>
+      <description value="ตัวอย่างข้อมูลโรงพยาบาล"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="ตัวอย่างข้อมูลคนไข้"/>
+      <exampleCanonical value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,65 @@
+{
+  "resourceType": "Encounter",
+  "id": "encounter-example",
+  "meta": {
+    "profile": [
+      "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"encounter-example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncdth-encounter.html\">Encounter (NCD TH)</a></p></div><p><b>identifier</b>: id: 1234</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Agreeing on diabetes care plan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#703040004)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> \" ใจดี\"</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-episode-of-care-example.html\">EpisodeOfCare/episode-of-care-example</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td>*</td><td>primary performer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PPRF)</span></td><td><a href=\"Practitioner\">Practitioner</a> \"Practitioner\"</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-organization-example.html\">Organization/organization-example</a> \"โรงพยาบาล NCD\"</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://examplehospital.com/episode",
+      "value": "1234"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "ambulatory"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "703040004",
+          "display": "Agreeing on diabetes care plan"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-example"
+  },
+  "episodeOfCare": [
+    {
+      "reference": "EpisodeOfCare/episode-of-care-example"
+    }
+  ],
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "PPRF",
+              "display": "primary performer"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/organization-example"
+  }
+}

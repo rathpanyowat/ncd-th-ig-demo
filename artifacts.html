@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NCD-TH-IG\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a id="project-logo" no-external="true" href="http://hl7.be">
+    <img
+      height="40"
+      alt="Project home"
+      src="assets/images/SIL-TH-logo.png"
+    />
+  </a>
+</div>
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!-- <div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+</div> -->
+
+<!-- search icon - if you want -->
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">(ร่าง) Thai NCD Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Thailand flag" src="assets/images/tha.svg" height="16" title="Thailand"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">(ร่าง) Thai NCD Implementation Guide - Local Development build (v0.1.0). See the <a href="https://rathpanyowat.github.io/ncd-th-ig-demo/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-allergy-intolerance.html"
+                     title="StructureDefinition/ncdth-allergy-intolerance">AllergyIntolerance (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลการแพ้ยาแพ้อาหาร</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-condition.html"
+                     title="StructureDefinition/ncdth-condition">Condition (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกปัญหา (problem list) หรือการวินิจฉัย (diagnosis)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-coverage.html"
+                     title="StructureDefinition/ncdth-coverage">Coverage (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลสิทธิ์การรักษา</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-diagnostic-report-lab.html"
+                     title="StructureDefinition/ncdth-diagnostic-report-lab">DiagnosticReport Profile for Lab (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้รายงานผลการตรวจแล็บที่มีหลายรายการย่อย (การจัดกลุ่ม Observation เช่น lab panel)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-encounter.html"
+                     title="StructureDefinition/ncdth-encounter">Encounter (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลการรับบริการสุขภาพ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-episode-of-care.html"
+                     title="StructureDefinition/ncdth-episode-of-care">EpisodeOfCare (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้จัดกลุ่มของ Encounter ประเภทเดียวกัน เช่น Encounter ทั้งหมดในการดูแลโรคเบาหวาน</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-family-member-history.html"
+                     title="StructureDefinition/ncdth-family-member-history">FamilyMemberHistory (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกประวัติการเจ็บป่วยในครอบครัว</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-media.html"
+                     title="StructureDefinition/ncdth-media">Media (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกรูปประกอบ ในที่นี้เช่น แผนผังครอบครัว</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-observation-lab.html"
+                     title="StructureDefinition/ncdth-observation-lab">Observation Profile - Lab (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลผลการตรวจแล็บแต่ละตัว</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-observation-pe-survey.html"
+                     title="StructureDefinition/ncdth-observation-pe-survey">Observation Profile - PE &amp; Survey (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลการตรวจร่างกาย และการประเมินตามแบบประเมินต่าง ๆ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-observation-social.html"
+                     title="StructureDefinition/ncdth-observation-social">Observation Profile - Social (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลประวัติทางสังคมของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-observation-vital.html"
+                     title="StructureDefinition/ncdth-observation-vital">Observation Profile - Vital Signs (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูล vital signs</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-organization.html"
+                     title="StructureDefinition/ncdth-organization">Organization (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูลหน่วยงาน/องค์กร</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncdth-patient.html"
+                     title="StructureDefinition/ncdth-patient">Patient (NCD TH)</a>
+               </td>
+               <td>
+<p>ใช้บันทึกข้อมูล demographic ของผู้ป่วย เช่น ชื่อ เลขประจำตัว ที่อยู่ เป็นต้น</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ncdth-lab-vs.html" title="ValueSet/ncdth-lab-vs">NCD TH Laboratory Value Set</a>
+               </td>
+               <td>
+<p>รหัสมาตรฐานการตรวจทางห้องปฏิบัติการที่ใช้ใน NCD IG</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ncdth-vital-vs.html" title="ValueSet/ncdth-vital-vs">NCD TH Vital Signs Value Set</a>
+               </td>
+               <td>
+<p>รหัสจากระบบ LOINC ในการบันทึกชนิดการตรวจ vital signs</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-th-gov-coverage-type-vs.html"
+                     title="ValueSet/th-gov-coverage-type-vs">Thai Government Coverage Type Value Set</a>
+               </td>
+               <td>
+<p>รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย รวมกับรหัสที่ HL7 กำหนด</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-th-gov-coverage-type-cs.html"
+                     title="CodeSystem/th-gov-coverage-type-cs">Thai Government Coverage Type Code System</a>
+               </td>
+               <td>
+<p>รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-allergy-intolerance-example.html"
+                     title="AllergyIntolerance/allergy-intolerance-example">AllergyIntolerance</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลการแพ้ยาของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-condition-example1.html"
+                     title="Condition/condition-example1">Condition 1 - Hypertension</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลโรคความดันโลหิตสูง (Hypertension)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-condition-example2.html"
+                     title="Condition/condition-example2">Condition 2 - Diabetes Mellitus</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลโรคความเบาหวาน (Diabetes Mellitus)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-coverage-example.html" title="Coverage/coverage-example">Coverage</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลสิทธิ์การรักษาของคนไข้ที่ใช้บัตรทอง</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-diagnostic-report-lab-example1.html"
+                     title="DiagnosticReport/diagnostic-report-lab-example1">DiagnosticReport - Lab Lipid Profile</a>
+               </td>
+               <td>
+<p>ตัวอย่างการรายงานผล Lipid Profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-diagnostic-report-lab-example2.html"
+                     title="DiagnosticReport/diagnostic-report-lab-example2">DiagnosticReport - Lab Metabolic Profile</a>
+               </td>
+               <td>
+<p>ตัวอย่างการรายงานผล Metabolic Profile (Glucose, BUN, Cr)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-encounter-example.html"
+                     title="Encounter/encounter-example">Encounter</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลการไปตรวจ OPD ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EpisodeOfCare-episode-of-care-example.html"
+                     title="EpisodeOfCare/episode-of-care-example">EpisodeOfCare</a>
+               </td>
+               <td>
+<p>ตัวอย่าง episode of care ของการดูแลโรคเรื้อรังเบาหวานและความดันโลหิตสูง</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-family-member-history-example.html"
+                     title="FamilyMemberHistory/family-member-history-example">FamilyMemberHistory</a>
+               </td>
+               <td>
+<p>ตัวอย่างประวัติข้อมูลมารดาของผู้ป่วยที่เสียชีวิตจากโรคมะเร็ง</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Media-media-example.html" title="Media/media-example">Media</a>
+               </td>
+               <td>
+<p>ตัวอย่างภาพแผนผังเครือญาติของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-af.html"
+                     title="Observation/observation-example-af">Observation - AF</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ Atrial Fibrillation (AF)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-age.html"
+                     title="Observation/observation-example-age">Observation - Age</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลอายุของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-alcohol.html"
+                     title="Observation/observation-example-alcohol">Observation - Alcohol</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการประเมินการดื่มเครื่องดื่มแอลกอฮอล์</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-bh.html"
+                     title="Observation/observation-example-bh">Observation - Body Height</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลส่วนสูง (body height) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-bmi.html"
+                     title="Observation/observation-example-bmi">Observation - BMI</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูล body mass index (BMI) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-bp.html"
+                     title="Observation/observation-example-bp">Observation - Blood Pressure (BP)</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลความดันโลหิต (blood pressure) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-bun.html"
+                     title="Observation/observation-example-bun">Observation - BUN</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ BUN ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-bw.html"
+                     title="Observation/observation-example-bw">Observation - Body Weight</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลน้ำหนัก (body weight) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-chol.html"
+                     title="Observation/observation-example-chol">Observation - Cholesterol</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ Cholesterol ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-cr.html"
+                     title="Observation/observation-example-cr">Observation - Creatinine</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ Cr ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-cvd.html"
+                     title="Observation/observation-example-cvd">Observation - CVD Risk</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการประเมินความเสี่ยงโรคจากหัวใจและหลอดเลือด (CVD risk)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-df-screening.html"
+                     title="Observation/observation-example-df-screening">Observation - Diabetic Foot Screening</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจคัดกรองปัญหาที่เท้า ในผู้ป่วยเบาหวาน</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-diet.html"
+                     title="Observation/observation-example-diet">Observation - Diet</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการประเมินภาวะโภชนาการ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-dn-screening.html"
+                     title="Observation/observation-example-dn-screening">Observation - Diabetic Nephropathy Screening</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคไตในผู้ป่วยเบาหวาน (diabetic nephropathy)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-dr-screening.html"
+                     title="Observation/observation-example-dr-screening">Observation - Diabetic Retinopathy Screening</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจคัดกรองโรคจอประสาทตาในผู้ป่วยเบาหวาน (diabetic retinopathy)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-fbs.html"
+                     title="Observation/observation-example-fbs">Observation - Fasting Blood Sugar (FBS)</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ fasting blood sugar (FBS) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-hdl.html"
+                     title="Observation/observation-example-hdl">Observation - HDL</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ HDL ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-ldl.html"
+                     title="Observation/observation-example-ldl">Observation - LDL</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ LDL ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-physical.html"
+                     title="Observation/observation-example-physical">Observation - Physical Activity</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการประเมินกิจกรรมทางกายภาพ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-rbs.html"
+                     title="Observation/observation-example-rbs">Observation - Resting Blood Sugar (RBS)</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ resting blood sugar (RBS) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-smoking.html"
+                     title="Observation/observation-example-smoking">Observation - Smoking</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการประเมินการสูบบุหรี่</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-st5.html"
+                     title="Observation/observation-example-st5">Observation - คัดกรองซึมเศร้า ST5</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า ST5</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-tg.html"
+                     title="Observation/observation-example-tg">Observation - TG</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจ triglyceride (TG) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example-wc.html"
+                     title="Observation/observation-example-wc">Observation - Waist Circumference</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลเส้นรอบเอว (waist circumference) ของผู้ป่วย</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-example2q.html"
+                     title="Observation/observation-example2q">Observation - คัดกรองซึมเศร้า 2Q</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลผลการตรวจคัดกรองซึมเศร้า 2 คำถาม</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-organization-example.html"
+                     title="Organization/organization-example">Organization</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลโรงพยาบาล</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-example.html" title="Patient/patient-example">Patient</a>
+               </td>
+               <td>
+<p>ตัวอย่างข้อมูลคนไข้</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://sil-th.github.io">Standard and Interoperability Lab Thailand</a>.  Package ncd-th-ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 23, 2022 12:43+0000">2022-02-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

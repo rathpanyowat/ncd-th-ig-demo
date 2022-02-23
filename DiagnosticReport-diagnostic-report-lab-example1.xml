@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="diagnostic-report-lab-example1"/>
+  <meta>
+    <profile value="https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://tmlt.this.or.th 320259}">Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)</span> (<span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>สมชาย ใจดี </b> (no stated gender) 1974-12-25 ( id: 1222233333445 (OFFICIAL))</td></tr><tr><td>When For</td><td>2022-02-20 01:28:17+0700</td></tr><tr><td>Reported</td><td>2022-02-20 06:28:17+0000</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-observation-example-chol.html"><span title="Codes: {https://tmlt.this.or.th 320070}">Cholesterol</span></a></td><td>150 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td><a href="Observation-observation-example-hdl.html"><span title="Codes: {https://tmlt.this.or.th 320071}">HDL</span></a></td><td>40 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td><a href="Observation-observation-example-ldl.html"><span title="Codes: {https://tmlt.this.or.th 320293}">LDL</span></a></td><td>100 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td><a href="Observation-observation-example-tg.html"><span title="Codes: {https://tmlt.this.or.th 320072}">Triglyceride</span></a></td><td>100 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://tmlt.this.or.th"/>
+      <code value="320259"/>
+      <display value="Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encounter-example"/>
+  </encounter>
+  <effectiveDateTime value="2022-02-20T13:28:17+07:00"/>
+  <issued value="2022-02-20T13:28:17+07:00"/>
+  <result>
+    <reference value="Observation/observation-example-chol"/>
+  </result>
+  <result>
+    <reference value="Observation/observation-example-hdl"/>
+  </result>
+  <result>
+    <reference value="Observation/observation-example-ldl"/>
+  </result>
+  <result>
+    <reference value="Observation/observation-example-tg"/>
+  </result>
+</DiagnosticReport>

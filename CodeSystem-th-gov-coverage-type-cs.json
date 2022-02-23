@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "th-gov-coverage-type-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">UC<a name=\"th-gov-coverage-type-cs-UC\"> </a></td><td>Universal Coverage</td><td>ประกันสุขภาพถ้วนหน้า</td></tr><tr><td style=\"white-space:nowrap\">SS<a name=\"th-gov-coverage-type-cs-SS\"> </a></td><td>Social Security</td><td>ประกันสังคม</td></tr><tr><td style=\"white-space:nowrap\">CS<a name=\"th-gov-coverage-type-cs-CS\"> </a></td><td>Civil Servant Medical Benefit Scheme</td><td>รักษาพยาบาลข้าราชการ</td></tr></table></div>"
+  },
+  "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs",
+  "version": "0.1.0",
+  "name": "THGovernmentCoverageTypeCS",
+  "title": "Thai Government Coverage Type Code System",
+  "status": "active",
+  "date": "2022-02-23T12:43:41+00:00",
+  "publisher": "Standard and Interoperability Lab Thailand",
+  "contact": [
+    {
+      "name": "Standard and Interoperability Lab Thailand",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://sil-th.github.io"
+        }
+      ]
+    }
+  ],
+  "description": "รหัสประเภทสิทธิ์การรักษาพยาบาลภาครัฐของไทย",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "TH",
+          "display": "Thailand"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "UC",
+      "display": "Universal Coverage",
+      "definition": "ประกันสุขภาพถ้วนหน้า"
+    },
+    {
+      "code": "SS",
+      "display": "Social Security",
+      "definition": "ประกันสังคม"
+    },
+    {
+      "code": "CS",
+      "display": "Civil Servant Medical Benefit Scheme",
+      "definition": "รักษาพยาบาลข้าราชการ"
+    }
+  ]
+}

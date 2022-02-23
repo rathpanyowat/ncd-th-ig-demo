@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/Coverage/coverage-example> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "coverage-example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage";
+       fhir:index 0;
+       fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"coverage-example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncdth-coverage.html\">Coverage (NCD TH)</a></p></div><p><b>status</b>: active</p><p><b>type</b>: Universal Coverage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-th-gov-coverage-type-cs.html\">Thai Government Coverage Type Code System</a>#UC; <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#PUBLICPOL \"public healthcare\")</span></p><p><b>beneficiary</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> \" ใจดี\"</p><p><b>payor</b>: <span>: Government</span></p></div>"
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/CodeSystem/th-gov-coverage-type-cs" ];
+       fhir:Coding.code [ fhir:value "UC" ];
+       fhir:Coding.display [ fhir:value "Universal Coverage" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+       fhir:Coding.code [ fhir:value "PUBLICPOL" ];
+       fhir:Coding.display [ fhir:value "public healthcare" ]
+     ]
+  ];
+  fhir:Coverage.beneficiary [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Patient/patient-example>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example" ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:Reference.display [ fhir:value "Government" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/Coverage/coverage-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

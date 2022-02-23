@@ -1,0 +1,142 @@
+{
+  "package": "ncd-th-ig",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "TH",
+  "extensions": [],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-allergy-intolerance",
+        "title": "AllergyIntolerance (NCD TH)"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-condition",
+        "title": "Condition (NCD TH)"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-coverage",
+        "title": "Coverage (NCD TH)"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab",
+        "title": "DiagnosticReport Profile for Lab (NCD TH)"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-encounter",
+        "title": "Encounter (NCD TH)"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-episode-of-care",
+        "title": "EpisodeOfCare (NCD TH)"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-family-member-history",
+        "title": "FamilyMemberHistory (NCD TH)"
+      }
+    ],
+    "Media": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-media",
+        "title": "Media (NCD TH)"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-lab",
+        "title": "Observation Profile - Lab (NCD TH)"
+      },
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey",
+        "title": "Observation Profile - PE \u0026 Survey (NCD TH)"
+      },
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-social",
+        "title": "Observation Profile - Social (NCD TH)"
+      },
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-vital",
+        "title": "Observation Profile - Vital Signs (NCD TH)"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-organization",
+        "title": "Organization (NCD TH)"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-patient",
+        "title": "Patient (NCD TH)"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/language": [
+      "Patient.contact.name",
+      "Patient.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

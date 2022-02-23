@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/DiagnosticReport/diagnostic-report-lab-example1> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "diagnostic-report-lab-example1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab";
+       fhir:index 0;
+       fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-diagnostic-report-lab>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://tmlt.this.or.th 320259}\">Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)</span> (<span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td><b>สมชาย ใจดี </b> (no stated gender) 1974-12-25 ( id: 1222233333445 (OFFICIAL))</td></tr><tr><td>When For</td><td>2022-02-20 01:28:17+0700</td></tr><tr><td>Reported</td><td>2022-02-20 06:28:17+0000</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-observation-example-chol.html\"><span title=\"Codes: {https://tmlt.this.or.th 320070}\">Cholesterol</span></a></td><td>150 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td><a href=\"Observation-observation-example-hdl.html\"><span title=\"Codes: {https://tmlt.this.or.th 320071}\">HDL</span></a></td><td>40 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td><a href=\"Observation-observation-example-ldl.html\"><span title=\"Codes: {https://tmlt.this.or.th 320293}\">LDL</span></a></td><td>100 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr><tr><td><a href=\"Observation-observation-example-tg.html\"><span title=\"Codes: {https://tmlt.this.or.th 320072}\">Triglyceride</span></a></td><td>100 mg/dL</td><td>2022-02-20 02:28:17+0700</td></tr></table></div>"
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "LAB" ]
+     ]
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://tmlt.this.or.th" ];
+       fhir:Coding.code [ fhir:value "320259" ];
+       fhir:Coding.display [ fhir:value "Lipid profile (Cholesterol, HDL-chol, LDL-chol, TG)" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Patient/patient-example>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example" ]
+  ];
+  fhir:DiagnosticReport.encounter [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Encounter/encounter-example>;
+     fhir:Reference.reference [ fhir:value "Encounter/encounter-example" ]
+  ];
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2022-02-20T13:28:17+07:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.issued [ fhir:value "2022-02-20T13:28:17+07:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-chol>;
+     fhir:Reference.reference [ fhir:value "Observation/observation-example-chol" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-hdl>;
+     fhir:Reference.reference [ fhir:value "Observation/observation-example-hdl" ]
+  ], [
+     fhir:index 2;
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-ldl>;
+     fhir:Reference.reference [ fhir:value "Observation/observation-example-ldl" ]
+  ], [
+     fhir:index 3;
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-tg>;
+     fhir:Reference.reference [ fhir:value "Observation/observation-example-tg" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/DiagnosticReport/diagnostic-report-lab-example1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

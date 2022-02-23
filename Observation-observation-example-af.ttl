@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-af> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-example-af"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey";
+       fhir:index 0;
+       fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/StructureDefinition/ncdth-observation-pe-survey>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"observation-example-af\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncdth-observation-pe-survey.html\">Observation Profile - PE &amp; Survey (NCD TH)</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Exam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#exam)</span></p><p><b>code</b>: History of atrial fibrillation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#312442005)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example.html\">Patient/patient-example</a> \" ใจดี\"</p><p><b>encounter</b>: <a href=\"Encounter-encounter-example.html\">Encounter/encounter-example</a></p><p><b>effective</b>: 2022-02-20 02:28:17+0700</p><p><b>value</b>: Negative for Atrial Fibrillation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#260385009 \"Negative\")</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "exam" ];
+       fhir:Coding.display [ fhir:value "Exam" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Exam" ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:312442005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "312442005" ];
+       fhir:Coding.display [ fhir:value "History of atrial fibrillation" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "History of atrial fibrillation" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Patient/patient-example>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link <https://rathpanyowat.github.io/ncd-th-ig-demo/Encounter/encounter-example>;
+     fhir:Reference.reference [ fhir:value "Encounter/encounter-example" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-02-20T14:28:17+07:00"^^xsd:dateTime];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:260385009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "260385009" ];
+       fhir:Coding.display [ fhir:value "Negative" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Negative for Atrial Fibrillation" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://rathpanyowat.github.io/ncd-th-ig-demo/Observation/observation-example-af.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
